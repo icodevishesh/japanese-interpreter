@@ -48,11 +48,11 @@ export default async function Dressing({
                     <div className="overflow-hidden">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                             {/* Left side - Image */}
-                            <div className="relative h-64 lg:h-auto flex items-center justify-center bg-white">
+                            <div className="relative h-64 lg:h-auto flex items-center justify-center">
                                 <img
                                     src={PalmistryImage.src}
                                     alt="Palmistry Experience"
-                                    className="max-w-full max-h-full object-contain"
+                                    className="max-w-full max-h-full object-contain border-2 border-[#12aa91] rounded-lg"
                                 />
                             </div>
 

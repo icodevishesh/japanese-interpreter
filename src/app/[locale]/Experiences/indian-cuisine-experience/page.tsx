@@ -52,7 +52,7 @@ export default async function IndianCuisine({
                                 <img
                                     src={IndianCuisineImage.src}
                                     alt="Palmistry Experience"
-                                    className="max-w-full max-h-full object-contain"
+                                    className="max-w-full max-h-full object-contain bg-white border-2 border-[#12aa91] rounded-lg"
                                 />
                             </div>
 

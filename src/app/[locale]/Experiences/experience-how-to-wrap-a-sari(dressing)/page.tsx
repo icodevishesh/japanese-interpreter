@@ -51,8 +51,8 @@ export default async function Dressing({
                            <div className="relative h-64 lg:h-auto flex items-center justify-center bg-white">
                                 <img
                                     src={DressingImage.src}
-                                    alt="Palmistry Experience"
-                                    className="max-w-full max-h-full object-contain"
+                                    alt="Traditional Saree Wearing Experience"
+                                    className="max-w-full max-h-full object-contain border-2 border-[#12aa91] rounded-lg"
                                 />
                             </div>
 

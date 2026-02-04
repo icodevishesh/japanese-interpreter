@@ -51,8 +51,8 @@ export default async function Hennatattoo({
                             <div className="relative h-64 lg:h-auto flex items-center justify-center bg-white">
                                 <img
                                     src={HennaArtImage.src}
-                                    alt="Palmistry Experience"
-                                    className="max-w-full max-h-full object-contain"
+                                    alt="Henna Art Experience"
+                                    className="max-w-full max-h-full object-contain border-2 border-[#12aa91] rounded-lg"
                                 />
                             </div>
 

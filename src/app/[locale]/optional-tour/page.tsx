@@ -26,7 +26,7 @@ export default async function OptionalTour({
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     {/* Main Heading */}
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#12aa91] tracking-tight">
-                        {t("optional.title")}
+                        {t("OptionalTour.title")}
                     </h1>
                     <nav className="mb-6">
                         <ol className="flex items-center justify-center space-x-4 mt-4 text-sm">
@@ -35,12 +35,12 @@ export default async function OptionalTour({
                                     href={`/${locale}`}
                                     className="text-[#12aa91] hover:text-[#0f8b73] transition-colors"
                                 >
-                                    {t("optional.home")}
+                                    {t("OptionalTour.home")}
                                 </a>
                             </li>
                             <li className="text-[#12aa91]">/</li>
                             <li className="text-[#12aa91] font-medium">
-                                {t("optional.optionalTour")}
+                                {t("OptionalTour.optionalTour")}
                             </li>
                         </ol>
                     </nav>
@@ -50,10 +50,10 @@ export default async function OptionalTour({
             {/* Optional Tour Section */}
              <section id="tours" className="w-full bg-[#f9fafb] py-12 md:py-24 px-4 md:px-12 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto text-center mb-16">
-                    <span className="bg-[#e6f6f4] text-[#12aa91] px-4 py-2 rounded-lg text-sm font-bold mb-8 inline-block">
+                    <span className="bg-[#e6f6f4] text-[#12aa91] px-4 py-2 rounded-lg text-lg font-bold mb-4 inline-block">
                         {t("OptionalTour.badge")}
                     </span>
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1a1a1a] max-w-5xl mx-auto leading-tight tracking-tight mt-6">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1a1a1a] max-w-4xl mx-auto leading-tight tracking-tight mt-6">
                         {t("OptionalTour.description")}
                     </h2>
                 </div>

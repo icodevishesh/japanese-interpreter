@@ -37,7 +37,7 @@ export default async function Inquiry({
                             </li>
                             <li className="text-[#12aa91]">/</li>
                             <li className="text-[#12aa91] font-medium">
-                                {t("inquiry.Enquiry")}
+                                {t("inquiry.inquiry")}
                             </li>
                         </ol>
                     </nav>

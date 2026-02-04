@@ -1,8 +1,8 @@
 import { Navbar } from "@/src/components/Navbar";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import ExperienceCard from "@/src/components/ExperienceCard";
-import IndianCookingImage from "@/src/assets/IndianCuisine.png";
-import SareeImage from "@/src/assets/Dressing.png";
+import IndianCookingImage from "@/src/assets/card/veg.png";
+import SareeImage from "@/src/assets/card/Sari.png";
 import HennaArtImage from "@/src/assets/Hennatattoo.png";
 import AyurvedicMassageImage from "@/src/assets/massage.jpg";
 import PalmReadingImage from "@/src/assets/Palmistry.png";
@@ -76,8 +76,8 @@ export default async function Experiences({
 
             {/* Experiences Grid */}
             <main className="bg-gray-50 py-20 px-6">
-                <div className="max-w-6xl mx-auto grid gap-8
-                    grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="max-w-6xl mx-auto grid gap-6 md:gap-8
+                    grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-auto">
                     {experiences.map((item, index) => (
                         <ExperienceCard key={index} {...item} index={index} />
                     ))}

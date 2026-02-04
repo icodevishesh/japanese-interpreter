@@ -52,7 +52,7 @@ export default async function Yoga({
                                 <img
                                     src={YogaImage.src}
                                     alt="Yoga Experience"
-                                    className="max-w-full max-h-full object-contain"
+                                    className="max-w-full max-h-full object-contain border-2 border-[#12aa91] rounded-lg"
                                 />
                             </div>
 

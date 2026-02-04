@@ -181,6 +181,130 @@
         "line": "Talk to us",
         "backHome": "Back to Home"
     },
+    "standardRoomSection": {
+        "title": "Standard Room",
+        "showAllPhotos": "Show all photos",
+        "homestayUnit": "Entire homestay unit in India",
+        "guests": "2 guests",
+        "bedroom": "1 bedroom",
+        "bed": "1 bed",
+        "bathroom": "1 bathroom",
+        "guestFavorite": {
+            "guest": "Guest",
+            "favourite": "favourite",
+            "description": "One of the most loved homestay, according to guests"
+        },
+        "accommodationFee": {
+            "title": "Accommodation fee (1 night with breakfast)",
+            "onePerson": "1 person: 13,700 yen (breakfast included)",
+            "twoPeople": "2 people: 16,300 yen (breakfast included)"
+        },
+        "meals": {
+            "title": "Meals",
+            "lunchDinner": "Lunch/Dinner: 2,000 yen (per person)"
+        },
+        "aboutFacility": {
+            "title": "About the facility",
+            "sharedSpaces": "The living room and kitchen are shared with the host family.",
+            "bathroom": "Bathrooms are for your exclusive use, but may be shared with other guests."
+        },
+        "airportTransfers": {
+            "title": "Airport transfers",
+            "info": "Round trip fare: 26,000 yen (per vehicle)"
+        },
+        "sleeping": {
+            "title": "Where you'll sleep",
+            "roomArea": "Room Area",
+            "tatami": "8.3 tatami mats",
+            "queenBed": "Queen bed",
+            "bedSize": "Approximately 160cm wide x 195cm long"
+        },
+        "amenities": {
+            "title": "What this place offers",
+            "freeBreakfast": "Free Breakfast",
+            "wifi": "Wifi",
+            "dedicatedWorkspace": "Dedicated workspace",
+            "hotShower": "Hot Shower",
+            "tv": "TV",
+            "laundry": "Laundry",
+            "airConditioning": "Air conditioning",
+            "welcomeSnacks": "Welcome Snacks",
+            "housekeepingService": "Housekeeping Service",
+            "balcony": "Balcony"
+        },
+        "inquire": {
+            "title": "Inquire About This Room",
+            "yourName": "Your Name",
+            "yourEmail": "Your Email",
+            "guests": "Guests",
+            "inquireNow": "Inquire Now"
+        },
+        "exploreExperiences": {
+            "title": "Explore Experiences"
+        }
+    },
+    "DeluxeRoomSection": {
+        "title": "Deluxe Room",
+        "showAllPhotos": "Show all photos",
+        "homestayUnit": "Entire homestay unit in India",
+        "guests": "2 guests",
+        "bedroom": "1 bedroom",
+        "bed": "1 bed",
+        "bathroom": "1 bathroom",
+        "guestFavorite": {
+            "guest": "Guest",
+            "favourite": "favourite",
+            "description": "One of the most loved homestay, according to guests"
+        },
+        "accommodationFee": {
+            "title": "Accommodation fee (1 night with breakfast)",
+            "onePerson": "1 person: 13,700 yen (breakfast included)",
+            "twoPeople": "2 people: 16,300 yen (breakfast included)"
+        },
+        "meals": {
+            "title": "Meals",
+            "lunchDinner": "Lunch/Dinner: 2,000 yen (per person)"
+        },
+        "aboutFacility": {
+            "title": "About the facility",
+            "sharedSpaces": "The living room and kitchen are shared with the host family.",
+            "bathroom": "Bathrooms are for your exclusive use, but may be shared with other guests."
+        },
+        "airportTransfers": {
+            "title": "Airport transfers",
+            "info": "Round trip fare: 26,000 yen (per vehicle)"
+        },
+        "sleeping": {
+            "title": "Where you'll sleep",
+            "roomArea": "Room Area",
+            "tatami": "8.3 tatami mats",
+            "queenBed": "Queen bed",
+            "bedSize": "Approximately 160cm wide x 195cm long"
+        },
+        "amenities": {
+            "title": "What this place offers",
+            "freeBreakfast": "Free Breakfast",
+            "wifi": "Wifi",
+            "dedicatedWorkspace": "Dedicated workspace",
+            "hotShower": "Hot Shower",
+            "tv": "TV",
+            "laundry": "Laundry",
+            "airConditioning": "Air conditioning",
+            "welcomeSnacks": "Welcome Snacks",
+            "housekeepingService": "Housekeeping Service",
+            "balcony": "Balcony"
+        },
+        "inquire": {
+            "title": "Inquire About This Room",
+            "yourName": "Your Name",
+            "yourEmail": "Your Email",
+            "guests": "Guests",
+            "inquireNow": "Inquire Now"
+        },
+        "exploreExperiences": {
+            "title": "Explore Experiences"
+        }
+    },
     "cta": {
         "inquireNow": "Inquire now"
     },
@@ -358,27 +482,31 @@
         "item2": "They can provide a unique perspective on your personality traits, strengths, and potential challenges.",
         "item3": "Hearing interpretations of one's past, present, and possible future encourages self-reflection and introspection."
     },
-    "optional": {
+    "OptionalTour": {
         "title": "Optional Tour",
         "home": "Home",
-        "optionalTour": "Optional Tour"
-    },
-    "OptionalTour": {
+        "optionalTour": "Optional Tour",
         "badge": "Optional tour (accompanied by a government-certified tour guide)",
         "description": "In addition to homestays, we can also arrange Indian cultural experiences and various trips."
     },
     "CustomerTestimonial": {
         "title": "Testimonials",
         "home": "Home",
-        "testimonials": "Testimonials"
+        "testimonials": "Testimonials",
+        "badge": "Customer testimonials",
+        "description": "Read what our repeat customers have to say"
     },
-    "CustomerTestimonialExp": {
+    "CustomerTestimonialpg": {
+        "title": "Testimonials",
+        "home": "Home",
+        "testimonials": "Testimonials",
         "badge": "Customer testimonials",
         "description": "Read what our repeat customers have to say"
     },
     "inquiry": {
-        "title": "Enquiry",
+        "title": "Inquiry",
         "home": "Home",
-        "Enquiry": "Enquiry"
+        "inquiry": "Inquiry"
+
     }
 }

@@ -78,7 +78,7 @@ export default async function Homestay({
                                 </p> */}
                             </div>
                             {/* Arrow */}
-                            <Link href={`/${locale}/deluxe-room`} className="w-12 h-12 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:bg-emerald-600 transition">
+                            <Link href={`/${locale}/super-deluxe-room`} className="w-12 h-12 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:bg-emerald-600 transition">
                                 <ArrowUpRight size={24} />
                             </Link>
                         </div>
@@ -107,7 +107,7 @@ export default async function Homestay({
                                 </p> */}
                             </div>
                             {/* Arrow */}
-                            <Link href={`/${locale}/#`} className="w-12 h-12 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:bg-emerald-600 transition">
+                            <Link href={`/${locale}/standard-room`} className="w-12 h-12 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:bg-emerald-600 transition">
                                 <ArrowUpRight size={24} />
                             </Link>
                         </div>
