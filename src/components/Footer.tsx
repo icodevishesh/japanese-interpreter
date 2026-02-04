@@ -1,15 +1,9 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import {
-    Twitter,
-    Facebook,
-    Instagram,
-    Linkedin,
     Phone,
     Mail,
-    MapPin,
-    CheckCircle2,
-    ArrowUpRight
+    MapPin
 } from "lucide-react";
 
 export function Footer() {

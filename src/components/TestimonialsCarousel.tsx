@@ -40,8 +40,6 @@ export default function TestimonialsCarousel() {
         setCurrentIndex((prev) => (prev - 1 + items.length) % items.length);
     };
 
-    const currentItem = items[currentIndex];
-
     return (
         <div className="flex flex-col lg:flex-row items-start gap-16 max-w-7xl mx-auto px-4">
             {/* Left Content */}

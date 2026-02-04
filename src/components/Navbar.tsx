@@ -6,7 +6,11 @@ import { Phone, Mail, ChevronDown, Instagram } from "lucide-react";
 import { useState } from "react";
 import LanguageSwitcher from "./switcher";
 
-export function Navbar({ locale }: { locale: string }) {
+interface NavbarProps {
+    locale: string;
+}
+
+export const Navbar: React.FC<NavbarProps> = ({ locale }) => {
     const t = useTranslations("nav");
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -59,7 +63,7 @@ export function Navbar({ locale }: { locale: string }) {
                     <Link href={`/${locale}`} className="text-[#12aa91] hover:text-[#0e8a75] transition-colors">
                         {t("home")}
                     </Link>
-                    <Link href={`/${locale}#about`} className="hover:text-[#12aa91] transition-colors whitespace-nowrap">
+                    <Link href={`/${locale}/self-introduction`} className="hover:text-[#12aa91] transition-colors whitespace-nowrap">
                         {t("selfIntroduction")}
                     </Link>
                     <div className="flex items-center gap-1 cursor-pointer hover:text-[#12aa91] transition-colors group relative py-2">
@@ -67,17 +71,17 @@ export function Navbar({ locale }: { locale: string }) {
                         <ChevronDown size={14} />
                         {/* Dropdown Placeholder */}
                         <div className="absolute top-full left-0 hidden group-hover:block bg-white shadow-lg rounded-md mt-0 py-2 w-56 z-50 border border-gray-100">
-                            <Link href={`/${locale}#homestay`} className="block px-4 py-2 hover:bg-[#f0f9f8] hover:text-[#12aa91]">{t("homestay")}</Link>
-                            <Link href={`/${locale}#experiences`} className="block px-4 py-2 hover:bg-[#f0f9f8] hover:text-[#12aa91]">{t("culturalExperiences")}</Link>
+                            <Link href={`/${locale}/homestay`} className="block px-4 py-2 hover:bg-[#f0f9f8] hover:text-[#12aa91]">{t("homestay")}</Link>
+                            <Link href={`/${locale}/experiences`} className="block px-4 py-2 hover:bg-[#f0f9f8] hover:text-[#12aa91]">{t("culturalExperiences")}</Link>
                         </div>
                     </div>
-                    <Link href={`/${locale}#tours`} className="hover:text-[#12aa91] transition-colors whitespace-nowrap">
+                    <Link href={`/${locale}/optional-tour`} className="hover:text-[#12aa91] transition-colors whitespace-nowrap">
                         {t("optionalTours")}
                     </Link>
-                    <Link href={`/${locale}#testimonials`} className="hover:text-[#12aa91] transition-colors whitespace-nowrap">
+                    <Link href={`/${locale}/customer-testimonials`} className="hover:text-[#12aa91] transition-colors whitespace-nowrap">
                         {t("customerTestimonials")}
                     </Link>
-                    <Link href={`/${locale}#contact-form`} className="hover:text-[#12aa91] transition-colors whitespace-nowrap">
+                    <Link href={`/${locale}/inquiry`} className="hover:text-[#12aa91] transition-colors whitespace-nowrap">
                         {t("inquiry")}
                     </Link>
                 </div>
@@ -99,23 +103,24 @@ export function Navbar({ locale }: { locale: string }) {
                     <Link href={`/${locale}`} className="text-[#12aa91] font-medium" onClick={() => setIsMenuOpen(false)}>
                         {t("home")}
                     </Link>
-                    <Link href={`/${locale}#about`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
+                    <Link href={`/${locale}/self-introduction`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
                         {t("selfIntroduction")}
                     </Link>
-                    <Link href={`/${locale}#homestay`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
-                        {t("homestayAndCultural")}
-                    </Link>
-                    <Link href={`/${locale}#tours`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
+                    <div className="absolute top-full left-0 hidden group-hover:block bg-white shadow-lg rounded-md mt-0 py-2 w-56 z-50 border border-gray-100">
+                        <Link href={`/${locale}/Homestay`} className="block px-4 py-2 hover:bg-[#f0f9f8] hover:text-[#12aa91]">{t("homestay")}</Link>
+                        <Link href={`/${locale}/Experiences`} className="block px-4 py-2 hover:bg-[#f0f9f8] hover:text-[#12aa91]">{t("culturalExperiences")}</Link>
+                    </div>
+                    <Link href={`/${locale}/optional-tour`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
                         {t("optionalTours")}
                     </Link>
-                    <Link href={`/${locale}#testimonials`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
+                    <Link href={`/${locale}/customer-testimonials`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
                         {t("customerTestimonials")}
                     </Link>
-                    <Link href={`/${locale}#contact-form`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
+                    <Link href={`/${locale}/inquiry`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
                         {t("inquiry")}
                     </Link>
                 </div>
             )}
         </nav>
     );
-}
+};

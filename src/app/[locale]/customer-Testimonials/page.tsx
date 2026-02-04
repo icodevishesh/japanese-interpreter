@@ -1,0 +1,131 @@
+import { Navbar } from "@/src/components/Navbar";
+import { Import } from "lucide-react";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import Image from "next/image";
+import ReikoImage from "@/src/assets/reiko.jpeg";
+import KazuyoImage from "@/src/assets/kazuyo.jpeg";
+import NorikoImage from "@/src/assets/noriko.jpeg";
+
+export default async function CustomerTestimonials({
+    params
+}: {
+    params: Promise<{ locale: string }>
+}) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+    const t = await getTranslations();
+
+    // Get testimonials data
+    const testimonials = t.raw("testimonials.items");
+    
+    // Map testimonial names to their images
+    const testimonialImages: { [key: string]: any } = {
+        "Reiko": ReikoImage,
+        "Kazuyo Konaka": KazuyoImage,
+        "Ms. Noriko Shinna": NorikoImage,
+        "Rina Sasaki": null, // Add image when available
+        "Akemi Harisienne": null, // Add image when available
+        "Madoka": null, // Add image when available
+        "Akiko Kobayashi": null, // Add image when available
+        "Sachi Nakagaki": null // Add image when available
+    };
+
+
+
+    return (
+        <div className="bg-white">
+            <Navbar locale={locale} />
+
+            {/* Hero Section */}
+            <section className="w-full bg-[#e6f6f4] py-8 md:py-10">
+                <div className="max-w-4xl mx-auto px-4 text-center">
+                    {/* Main Heading */}
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#12aa91] tracking-tight">
+                        {t("CustomerTestimonial.title")}
+                    </h1>
+                    <nav className="mb-6">
+                        <ol className="flex items-center justify-center space-x-4 mt-4 text-sm">
+                            <li>
+                                <a
+                                    href={`/${locale}`}
+                                    className="text-[#12aa91] hover:text-[#0f8b73] transition-colors"
+                                >
+                                    {t("CustomerTestimonial.home")}
+                                </a>
+                            </li>
+                            <li className="text-[#12aa91]">/</li>
+                            <li className="text-[#12aa91] font-medium">
+                                {t("CustomerTestimonial.testimonials")}
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </section>
+
+            {/* Customer Testimonials Section */}
+            <section id="Testimonial" className="w-full bg-[#f9fafb] py-12 md:py-24 px-4 md:px-12 relative overflow-hidden">
+                <div className="max-w-7xl mx-auto text-center mb-16">
+                    <span className="bg-[#e6f6f4] text-[#12aa91] px-4 py-2 rounded-lg text-sm font-bold mb-8 inline-block">
+                        {t("CustomerTestimonialExp.badge")}
+                    </span>
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1a1a1a] max-w-5xl mx-auto leading-tight tracking-tight mt-6">
+                        {t("CustomerTestimonialExp.description")}
+                    </h2>
+                </div>
+
+                {/* Testimonials Grid */}
+                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {testimonials.map((item: any, index: number) => (
+                        <div
+                            key={index}
+                            className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+                        >
+                            {/* Header */}
+                            <div className="flex items-center gap-4 mb-4">
+                                {/* Profile Image */}
+                                {testimonialImages[item.name] ? (
+                                    <Image
+                                        src={testimonialImages[item.name]}
+                                        alt={item.name}
+                                        width={56}
+                                        height={56}
+                                        className="w-14 h-14 rounded-full object-cover"
+                                    />
+                                ) : (
+                                    <div className="w-14 h-14 bg-[#12aa91] rounded-full flex items-center justify-center">
+                                        <span className="text-white font-bold text-lg">
+                                            {item.name.charAt(0)}
+                                        </span>
+                                    </div>
+                                )}
+
+                                <div>
+                                    {/* Stars */}
+                                    <div className="flex mb-1">
+                                        {[...Array(5)].map((_, i) => (
+                                            <span key={i} className="text-yellow-400 text-sm">★</span>
+                                        ))}
+                                    </div>
+
+                                    {/* Name */}
+                                    <h3 className="font-semibold text-gray-900">
+                                        {item.name}
+                                    </h3>
+                                </div>
+                            </div>
+
+                            {/* Testimonial Text */}
+                            <p className="text-gray-600 text-sm leading-relaxed">
+                                {item.text}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+
+
+            </section>
+
+
+        </div>
+    );
+}
