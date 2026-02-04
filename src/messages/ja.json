@@ -163,5 +163,67 @@
     },
     "cta": {
         "inquireNow": "お問い合わせ"
+    },
+    "standardRoomSection": {
+        "title": "スタンダードルーム",
+        "showAllPhotos": "すべての写真を見る",
+        "homestayUnit": "インドにある一棟貸しの宿泊施設",
+        "guests": "ゲスト2名",
+        "bedroom": "ベッドルーム1室",
+        "bed": "ベッド1台",
+        "bathroom": "バスルーム1室",
+        "guestFavorite": {
+            "guest": "ゲスト",
+            "favourite": "お気に入り",
+            "description": "ゲストから特に高く評価されている人気のホームステイです"
+        },
+        "accommodationFee": {
+            "title": "宿泊料金（朝食付き・1泊）",
+            "onePerson": "1名：13,700円（朝食付き）",
+            "twoPeople": "2名：16,300円（朝食付き）"
+        },
+        "meals": {
+            "title": "お食事",
+            "lunchDinner": "昼食／夕食：2,000円（1名あたり）"
+        },
+        "aboutFacility": {
+            "title": "施設について",
+            "sharedSpaces": "リビングルームとキッチンはホストファミリーと共有です。",
+            "bathroom": "バスルームは専用ですが、他のゲストと共有する場合があります。"
+        },
+        "airportTransfers": {
+            "title": "空港送迎",
+            "info": "往復料金：26,000円（1台あたり）"
+        },
+        "sleeping": {
+            "title": "寝室について",
+            "roomArea": "部屋の広さ",
+            "tatami": "8.3畳",
+            "queenBed": "クイーンベッド",
+            "bedSize": "約幅160cm × 長さ195cm"
+        },
+        "amenities": {
+            "title": "この宿泊先の設備・サービス",
+            "freeBreakfast": "無料朝食",
+            "wifi": "Wi-Fi",
+            "dedicatedWorkspace": "専用ワークスペース",
+            "hotShower": "温水シャワー",
+            "tv": "テレビ",
+            "laundry": "ランドリー",
+            "airConditioning": "エアコン",
+            "welcomeSnacks": "ウェルカムスナック",
+            "housekeepingService": "ハウスキーピングサービス",
+            "balcony": "バルコニー"
+        },
+        "inquire": {
+            "title": "この部屋について問い合わせる",
+            "yourName": "お名前",
+            "yourEmail": "メールアドレス",
+            "guests": "宿泊人数",
+            "inquireNow": "今すぐ問い合わせる"
+        },
+        "exploreExperiences": {
+            "title": "体験を探す"
+        }
     }
 }
