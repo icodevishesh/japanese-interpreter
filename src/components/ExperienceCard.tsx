@@ -26,16 +26,16 @@ export default function ExperienceCard({ title, image, index }: ExperienceCardPr
     // Redirect to specific experience section based on index
     if (index === 1) {
       // Sari wrapping - use router.push for proper navigation
-      router.push(`/${locale}/Experiences/experience-how-to-wrap-a-sari(dressing)`);
+      router.push(`/${locale}/Experiences/traditional-saree-wearing-experience`);
     } else if (index === 2) {
       // Henna art - scroll to experiences section
-      router.push(`/${locale}/Experiences/henna-art-experiences(henna-tattoo)`);
+      router.push(`/${locale}/Experiences/henna-art-experiences`);
     } else if (index === 3) {
       // Shirodhara - scroll to experiences section
-      router.push(`/${locale}/Experiences/ayurvedic-message(shirodhara)`);
+      router.push(`/${locale}/Experiences/ayurvedic-message`);
     } else if (index === 4) {
       // Palmistry - use router.push for proper navigation
-      router.push(`/${locale}/Experiences/palmistry-and-fortune-telling`);
+      router.push(`/${locale}/Experiences/palm-reading`);
     } else if (index === 5) {
       // Yoga - use router.push for proper navigation
       router.push(`/${locale}/Experiences/yoga-experience`);
@@ -75,7 +75,7 @@ export default function ExperienceCard({ title, image, index }: ExperienceCardPr
       </div>
       
       {/* Title */}
-      <div className="p-6 text-center">
+      <div className="p-6 text-center border-t-4 border-[#12AB90]">
         <h3 className="font-semibold text-gray-900 text-lg">
           {title}
         </h3>

@@ -13,6 +13,7 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ locale }) => {
     const t = useTranslations("nav");
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     return (
         <nav className="w-full flex flex-col font-['Inter',sans-serif] sticky top-0 z-50 shadow-sm">
@@ -71,7 +72,7 @@ export const Navbar: React.FC<NavbarProps> = ({ locale }) => {
                         <ChevronDown size={14} />
                         {/* Dropdown Placeholder */}
                         <div className="absolute top-full left-0 hidden group-hover:block bg-white shadow-lg rounded-md mt-0 py-2 w-56 z-50 border border-gray-100">
-                            <Link href={`/${locale}/Homestay`} className="block px-4 py-2 hover:bg-[#f0f9f8] hover:text-[#12aa91]">{t("homestay")}</Link>
+                            <Link href={`/${locale}/homestay`} className="block px-4 py-2 hover:bg-[#f0f9f8] hover:text-[#12aa91]">{t("homestay")}</Link>
                             <Link href={`/${locale}/Experiences`} className="block px-4 py-2 hover:bg-[#f0f9f8] hover:text-[#12aa91]">{t("culturalExperiences")}</Link>
                         </div>
                     </div>
@@ -106,10 +107,12 @@ export const Navbar: React.FC<NavbarProps> = ({ locale }) => {
                     <Link href={`/${locale}/self-introduction`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
                         {t("selfIntroduction")}
                     </Link>
-                    <div className="absolute top-full left-0 hidden group-hover:block bg-white shadow-lg rounded-md mt-0 py-2 w-56 z-50 border border-gray-100">
-                        <Link href={`/${locale}/Homestay`} className="block px-4 py-2 hover:bg-[#f0f9f8] hover:text-[#12aa91]">{t("homestay")}</Link>
-                        <Link href={`/${locale}/Experiences`} className="block px-4 py-2 hover:bg-[#f0f9f8] hover:text-[#12aa91]">{t("culturalExperiences")}</Link>
-                    </div>
+                    <Link href={`/${locale}/homestay`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
+                        {t("homestay")}
+                    </Link>
+                    <Link href={`/${locale}/Experiences`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
+                        {t("culturalExperiences")}
+                    </Link>
                     <Link href={`/${locale}/optional-tour`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
                         {t("optionalTours")}
                     </Link>

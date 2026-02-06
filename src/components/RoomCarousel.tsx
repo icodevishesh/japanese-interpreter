@@ -10,13 +10,17 @@ interface RoomItem {
     title: string;
     description: string;
     price: string;
+    meal: string;
     alt: string;
+    link: string;
 }
 
 interface RoomCarouselProps {
     rooms: RoomItem[];
     autoplayInterval?: number;
 }
+
+
 
 const RoomCarousel = ({ rooms, autoplayInterval = 5000 }: RoomCarouselProps) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -110,7 +114,7 @@ const RoomCarousel = ({ rooms, autoplayInterval = 5000 }: RoomCarouselProps) => 
                                                     {room.title}
                                                 </h4>
                                             </div>
-                                            <Link href="#contact-form">
+                                            <Link href={`${room.link}`}>
                                                 <div className={`w-10 h-10 rounded-full bg-[#12aa91] flex items-center justify-center text-white transition-transform shrink-0 ${expandedIndex === index ? 'rotate-45' : 'group-hover:rotate-45'}`}>
                                                     <ArrowUpRight size={20} />
                                                 </div>

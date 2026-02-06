@@ -20,8 +20,8 @@ export default async function Shirodhara({
             <section className="w-full bg-[#e6f6f4] py-8 md:py-10">
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     {/* Main Heading */}
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#12aa91] tracking-tight">
-                        {t("shirodhara.title")}
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#12aa91] tracking-tight">
+                        {t("expitem.shirodhara.title")}
                     </h1>
                     <nav className="mb-6">
                         <ol className="flex items-center justify-center space-x-4 mt-4 text-sm">
@@ -30,12 +30,12 @@ export default async function Shirodhara({
                                     href={`/${locale}`}
                                     className="text-[#12aa91] hover:text-[#0f8b73] transition-colors"
                                 >
-                                    {t("shirodhara.home")}
+                                    {t("expitem.shirodhara.home")}
                                 </a>
                             </li>
                             <li className="text-[#12aa91]">/</li>
                             <li className="text-[#12aa91] font-medium">
-                                {t("shirodhara.AyurvedicMassageShirodhara")}
+                                {t("expitem.shirodhara.AyurvedicMassageShirodhara")}
                             </li>
                         </ol>
                     </nav>
@@ -61,18 +61,18 @@ export default async function Shirodhara({
                                 {/* Price */}
                                 <div className="mb-10">
                                     <h2 className="text-2xl md:text-3xl font-bold text-black">
-                                        {t("shirodharaPrice.Price")}
+                                        {t("expitem.shirodharaPrice.Price")}
                                     </h2>
 
                                     <p className="mt-2 text-gray-600">
-                                        {t("shirodharaPrice.desc")}
+                                        {t("expitem.shirodharaPrice.desc")}
                                     </p>
                                 </div>
 
                                 {/* Explanation */}
                                 <div className="space-y-6">
                                     <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                                        {t("shirodharaPrice.exp")}
+                                        {t("expitem.shirodharaPrice.exp")}
                                     </h3>
 
                                     <div className="flex items-start gap-4">
@@ -92,7 +92,7 @@ export default async function Shirodhara({
                                         </svg>
 
                                         <p className="text-gray-600 leading-relaxed">
-                                            {t("shirodharaPrice.item1")}
+                                            {t("expitem.shirodharaPrice.item1")}
                                         </p>
                                     </div>
                                 </div>

@@ -10,6 +10,7 @@ interface ExperienceItem {
     desc: string;
     image: string | StaticImageData;
     rank?: string;
+    link: string;
 }
 
 interface ExperiencesCarouselProps {
@@ -117,7 +118,7 @@ export default function ExperiencesCarousel({ items, autoplayInterval = 5000 }: 
                                                     {item.title}
                                                 </h4>
                                             </div>
-                                            <Link href="#contact-form">
+                                            <Link href={`${item.link}`}>
                                                 <div className={`w-10 h-10 rounded-full bg-[#12aa91] flex items-center justify-center text-white transition-transform shrink-0 ${expandedIndex === index ? 'rotate-45' : 'group-hover:rotate-45'}`}>
                                                     <ArrowUpRight size={20} />
                                                 </div>

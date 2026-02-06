@@ -1,9 +1,9 @@
 import { Navbar } from "@/src/components/Navbar";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import HennaArtImage from "@/src/assets/Hennatattoo.png";
+import PalmistryImage from "@/src/assets/Palmistry.png";
 
 
-export default async function Hennatattoo({
+export default async function Dressing({
     params
 }: {
     params: Promise<{ locale: string }>
@@ -21,7 +21,7 @@ export default async function Hennatattoo({
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     {/* Main Heading */}
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#12aa91] tracking-tight">
-                        {t("hennatattoo.title")}
+                        {t("expitem.Palmistry.title")}
                     </h1>
                     <nav className="mb-6">
                         <ol className="flex items-center justify-center space-x-4 mt-4 text-sm">
@@ -30,12 +30,12 @@ export default async function Hennatattoo({
                                     href={`/${locale}`}
                                     className="text-[#12aa91] hover:text-[#0f8b73] transition-colors"
                                 >
-                                    {t("hennatattoo.home")}
+                                    {t("expitem.Palmistry.home")}
                                 </a>
                             </li>
                             <li className="text-[#12aa91]">/</li>
                             <li className="text-[#12aa91] font-medium">
-                                {t("hennatattoo.HennaArtExperience")}
+                                {t("expitem.Palmistry.PalmistryExperience")}
                             </li>
                         </ol>
                     </nav>
@@ -48,52 +48,33 @@ export default async function Hennatattoo({
                     <div className="overflow-hidden">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                             {/* Left side - Image */}
-                            <div className="relative h-64 lg:h-auto flex items-center justify-center bg-white">
+                            <div className="relative h-64 lg:h-auto flex items-center justify-center">
                                 <img
-                                    src={HennaArtImage.src}
-                                    alt="Henna Art Experience"
+                                    src={PalmistryImage.src}
+                                    alt="Palmistry Experience"
                                     className="max-w-full max-h-full object-contain border-2 border-[#12aa91] rounded-lg"
                                 />
                             </div>
 
                             {/* Right side - Content */}
                             <div className="p-8 md:p-12">
-                                {/* PRICE */}
-                                <div className="mb-10">
-                                    <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
-                                        {t("tattooPrice.title")}
+                                {/* Price */}
+                                <div className="mb-8">
+                                    <h2 className="text-2xl md:text-3xl font-bold text-black">
+                                        {t("expitem.palmistryexp.title")}
                                     </h2>
-
-                                    <div className="flex items-center gap-3">
-                                        <svg
-                                            className="w-4 h-4 text-[#12aa91] flex-shrink-0"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            strokeWidth="3"
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                d="M5 13l4 4L19 7"
-                                            />
-                                        </svg>
-
-                                        <p className="text-gray-600">
-                                            {t("tattooPrice.Price")}
-                                        </p>
-                                    </div>
                                 </div>
 
-                                {/* EXPLANATION */}
-                                <div>
-                                    <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-                                        {t("tattooPrice.exp")}
+                                {/* Explanation */}
+                                <div className="space-y-6">
+                                    <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                                        {t("expitem.palmistryexp.exp")}
                                     </h3>
 
-                                    {[1, 2, 3, 4].map((item, index) => (
+                                    {[1, 2, 3].map((item, index) => (
                                         <div key={item}>
                                             <div className="flex items-start gap-4">
+                                                {/* Green check */}
                                                 <svg
                                                     className="w-4 h-4 text-[#12aa91] mt-1 flex-shrink-0"
                                                     fill="none"
@@ -108,11 +89,13 @@ export default async function Hennatattoo({
                                                     />
                                                 </svg>
 
+                                                {/* Text */}
                                                 <p className="text-gray-600 leading-relaxed">
-                                                    {t(`tattooPrice.item${item}`)}
+                                                    {t(`expitem.palmistryexp.item${item}`)}
                                                 </p>
                                             </div>
 
+                                            {/* Divider */}
                                             {index < 3 && (
                                                 <div className="ml-8 my-4 border-b border-gray-200"></div>
                                             )}

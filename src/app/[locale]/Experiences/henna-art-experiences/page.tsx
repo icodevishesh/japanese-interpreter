@@ -1,9 +1,9 @@
 import { Navbar } from "@/src/components/Navbar";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import DressingImage from "@/src/assets/Dressing.png";
+import HennaArtImage from "@/src/assets/Hennatattoo.png";
 
 
-export default async function Dressing({
+export default async function Hennatattoo({
     params
 }: {
     params: Promise<{ locale: string }>
@@ -21,7 +21,7 @@ export default async function Dressing({
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     {/* Main Heading */}
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#12aa91] tracking-tight">
-                        {t("dressing.title")}
+                        {t("expitem.hennatattoo.title")}
                     </h1>
                     <nav className="mb-6">
                         <ol className="flex items-center justify-center space-x-4 mt-4 text-sm">
@@ -30,12 +30,12 @@ export default async function Dressing({
                                     href={`/${locale}`}
                                     className="text-[#12aa91] hover:text-[#0f8b73] transition-colors"
                                 >
-                                    {t("dressing.home")}
+                                    {t("expitem.hennatattoo.home")}
                                 </a>
                             </li>
                             <li className="text-[#12aa91]">/</li>
                             <li className="text-[#12aa91] font-medium">
-                                {t("dressing.TraditionalSareeWearingExperience")}
+                                {t("expitem.hennatattoo.HennaArtExperience")}
                             </li>
                         </ol>
                     </nav>
@@ -48,33 +48,52 @@ export default async function Dressing({
                     <div className="overflow-hidden">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                             {/* Left side - Image */}
-                           <div className="relative h-64 lg:h-auto flex items-center justify-center bg-white">
+                            <div className="relative h-64 lg:h-auto flex items-center justify-center bg-white">
                                 <img
-                                    src={DressingImage.src}
-                                    alt="Traditional Saree Wearing Experience"
+                                    src={HennaArtImage.src}
+                                    alt="Henna Art Experience"
                                     className="max-w-full max-h-full object-contain border-2 border-[#12aa91] rounded-lg"
                                 />
                             </div>
 
                             {/* Right side - Content */}
                             <div className="p-8 md:p-12">
-                                {/* Price */}
-                                <div className="mb-8">
-                                    <h2 className="text-2xl md:text-3xl font-bold text-black">
-                                        {t("DressPrice.Price")}
+                                {/* PRICE */}
+                                <div className="mb-10">
+                                    <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
+                                        {t("expitem.tattooPrice.title")}
                                     </h2>
+
+                                    <div className="flex items-center gap-3">
+                                        <svg
+                                            className="w-4 h-4 text-[#12aa91] flex-shrink-0"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            strokeWidth="3"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                d="M5 13l4 4L19 7"
+                                            />
+                                        </svg>
+
+                                        <p className="text-gray-600">
+                                            {t("expitem.tattooPrice.Price")}
+                                        </p>
+                                    </div>
                                 </div>
 
-                                {/* Explanation */}
-                                <div className="space-y-6">
-                                    <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                                        {t("DressPrice.exp")}
+                                {/* EXPLANATION */}
+                                <div>
+                                    <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+                                        {t("expitem.tattooPrice.exp")}
                                     </h3>
 
                                     {[1, 2, 3, 4].map((item, index) => (
                                         <div key={item}>
                                             <div className="flex items-start gap-4">
-                                                {/* Green check */}
                                                 <svg
                                                     className="w-4 h-4 text-[#12aa91] mt-1 flex-shrink-0"
                                                     fill="none"
@@ -89,13 +108,11 @@ export default async function Dressing({
                                                     />
                                                 </svg>
 
-                                                {/* Text */}
                                                 <p className="text-gray-600 leading-relaxed">
-                                                    {t(`DressPrice.item${item}`)}
+                                                    {t(`expitem.tattooPrice.item${item}`)}
                                                 </p>
                                             </div>
 
-                                            {/* Divider */}
                                             {index < 3 && (
                                                 <div className="ml-8 my-4 border-b border-gray-200"></div>
                                             )}

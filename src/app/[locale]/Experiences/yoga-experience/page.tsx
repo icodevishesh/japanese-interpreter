@@ -21,7 +21,7 @@ export default async function Yoga({
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     {/* Main Heading */}
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#12aa91] tracking-tight">
-                        {t("Yoga.title")}
+                        {t("expitem.Yoga.title")}
                     </h1>
                     <nav className="mb-6">
                         <ol className="flex items-center justify-center space-x-4 mt-4 text-sm">
@@ -30,12 +30,12 @@ export default async function Yoga({
                                     href={`/${locale}`}
                                     className="text-[#12aa91] hover:text-[#0f8b73] transition-colors"
                                 >
-                                    {t("Yoga.home")}
+                                    {t("expitem.Yoga.home")}
                                 </a>
                             </li>
                             <li className="text-[#12aa91]">/</li>
                             <li className="text-[#12aa91] font-medium">
-                                {t("Yoga.YogaExperience")}
+                                {t("expitem.Yoga.YogaExperience")}
                             </li>
                         </ol>
                     </nav>
@@ -61,7 +61,7 @@ export default async function Yoga({
                                 {/* Price */}
                                 <div className="mb-8">
                                     <h2 className="text-2xl md:text-3xl text-start font-bold text-black mb-4">
-                                        {t("Yoga.title")}
+                                        {t("expitem.yogaexp.title")}
                                     </h2>
                                 </div>
 
@@ -88,7 +88,7 @@ export default async function Yoga({
 
                                                     {/* Text */}
                                                     <p className="text-gray-600 leading-relaxed">
-                                                        {t(`yogaexp.item${item}`)}
+                                                        {t(`expitem.yogaexp.item${item}`)}
                                                     </p>
                                                 </div>
 

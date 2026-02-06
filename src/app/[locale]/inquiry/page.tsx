@@ -19,7 +19,7 @@ export default async function Inquiry({
 
             {/* Hero Section */}
 
-             <section className="w-full bg-[#e6f6f4] py-8 md:py-12 mb-12">
+            <section className="w-full bg-[#e6f6f4] py-8 md:py-12 mb-12">
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     {/* Main Heading */}
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#12aa91] tracking-tight">
@@ -50,15 +50,20 @@ export default async function Inquiry({
             {/* Map Section */}
             <section className="w-full bg-white py-16">
                 <div className="max-w-7xl mx-auto px-4">
+                    <div className="flex flex-col items-center text-center mb-4">
+                        <span className="bg-[#e6f6f4] text-[#12aa91] px-4 py-1.5 rounded-lg text-sm font-bold mb-2">
+                            {t("inquiry.map")}
+                        </span>
+                    </div>
                     <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            Visit Us
+                            {t("inquiry.visit")}
                         </h2>
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            Find us at our office in New Delhi, India
+                            {t("inquiry.findus")}
                         </p>
                     </div>
-                    
+
                     <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                         {/* Map Container */}
                         <div className="relative h-96 bg-white">

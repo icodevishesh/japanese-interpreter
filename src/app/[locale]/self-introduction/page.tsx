@@ -104,13 +104,13 @@ export default async function SelfIntroduction({
 
             {/* Team Members Section */}
             <section className="w-full bg-white py-8 md:py-12 px-4 md:px-12">
-                <div className="w-full text-center justify-center mb-2">
-                    <span className="bg-[#f0f9f8] text-[#12aa91] px-4 py-1.5 rounded-lg text-sm font-semibold tracking-wide">
+                <div className="w-55  text-center justify-center mx-auto">
+                    <h2 className="text-2xl md:text-4xl font-bold bg-[#e6f6f4] text-center text-gray-800 mb-8 md:mb-12 rounded-lg">
                         {t("teamMember.title")}
                     </span>
                 </div>
                 <div className="max-w-6xl mx-auto">
-                    <p className="text-center text-5xl font-semibold text-black mb-8 md:mb-12">
+                    <p className="text-center text-2xl md:text-5xl font-semibold text-black mb-8 md:mb-12">
                         {t("teamMember.description")}
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
