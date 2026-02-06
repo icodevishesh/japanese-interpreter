@@ -48,7 +48,7 @@ export default async function OptionalTour({
             </section>
 
             {/* Optional Tour Section */}
-             <section id="tours" className="w-full bg-[#f9fafb] py-12 md:py-24 px-4 md:px-12 relative overflow-hidden">
+            <section id="tours" className="w-full bg-[#f9fafb] py-12 md:py-24 px-4 md:px-12 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto text-center mb-16">
                     <span className="bg-[#e6f6f4] text-[#12aa91] px-4 py-2 rounded-lg text-lg font-bold mb-4 inline-block">
                         {t("OptionalTour.badge")}
@@ -60,12 +60,12 @@ export default async function OptionalTour({
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
                     {[
-                        { title: t("tourism.north"), img: NorthIndiaImage },
-                        { title: t("tourism.south"), img: SouthIndiaImage },
-                        { title: t("tourism.east"), img: EastIndiaImage },
-                        { title: t("tourism.west"), img: WestIndiaImage },
+                        { title: t("tourism.north"), img: NorthIndiaImage, href: "/optional-tour/north" },
+                        { title: t("tourism.south"), img: SouthIndiaImage, href: "/optional-tour/south" },
+                        { title: t("tourism.east"), img: EastIndiaImage, href: "/optional-tour/east" },
+                        { title: t("tourism.west"), img: WestIndiaImage, href: "/optional-tour/west" },
                     ].map((region, idx) => (
-                        <div key={idx} className="group relative aspect-[3/2] rounded-xl overflow-hidden shadow-xl">
+                        <div key={idx} className="group relative aspect-3/2 rounded-xl overflow-hidden shadow-xl">
                             <Image
                                 src={region.img}
                                 alt={region.title}
@@ -73,10 +73,10 @@ export default async function OptionalTour({
                                 className="object-cover"
                             />
                             {/* Overlay with title matching design */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end justify-start p-6">
-                                <h3 className="text-white text-xl md:text-2xl font-bold tracking-tight text-start">
+                            <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent flex items-end justify-start p-6">
+                                <a href={region.href} className="text-white text-xl md:text-2xl font-bold tracking-tight text-start">
                                     {region.title}
-                                </h3>
+                                </a>
                             </div>
                         </div>
                     ))}

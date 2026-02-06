@@ -1,8 +1,5 @@
 import { Navbar } from "@/src/components/Navbar";
-import { ArrowUpRight } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import Link from "next/link";
-import Image from "next/image";
 import StandardRoomImage from "@/src/assets/standardroom.jpg";
 import DeluxeRoomImage from "@/src/assets/deeluxrrom1.jpeg";
 import RoomCarousal from "@/src/components/RoomCarousel";

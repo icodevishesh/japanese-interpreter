@@ -78,7 +78,7 @@
         "title": "For Those Who Just Can't Get Enough Of The Classics, Customize Your Own Indian Adventure With A Tour!",
         "homebtn": "Home",
         "north": "North India tourism here!",
-        "northpg": {
+        "northCities": {
             "title": "North",
             "cities": [
                 {
@@ -116,7 +116,7 @@
             ]
         },
         "south": "South India tourism here!",
-        "Southpg": {
+        "southCities": {
             "title": "South",
             "cities": [
                 {
@@ -154,7 +154,7 @@
             ]
         },
         "east": "East India Tourism here!",
-        "Eastpg": {
+        "eastCities": {
             "title": "East",
             "cities": [
                 {
@@ -192,7 +192,7 @@
             ]
         },
         "west": "Western India tourism here!",
-        "Westpg": {
+        "westCities": {
             "title": "West",
             "cities": [
                 {

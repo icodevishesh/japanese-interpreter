@@ -78,7 +78,7 @@
         "title": "定番だけでは物足りない方へ。ツアーでカスタマイズする、あなただけのインド旅行！",
         "homebtn": "ホーム",
         "north": "北インド観光はこちら！",
-        "northpg": {
+        "northCities": {
             "title": "北",
             "cities": [
                 {
@@ -116,7 +116,7 @@
             ]
         },
         "south": "南インド観光はこちら！",
-        "Southpg": {
+        "southCities": {
             "title": "南",
             "cities": [
                 {
@@ -154,7 +154,7 @@
             ]
         },
         "east": "東インド観光はこちら！",
-        "Eastpg": {
+        "eastCities": {
             "title": "東",
             "cities": [
                 {
@@ -192,7 +192,7 @@
             ]
         },
         "west": "西インド観光はこちら！",
-        "Westpg": {
+        "westCities": {
             "title": "西",
             "cities": [
                 {
