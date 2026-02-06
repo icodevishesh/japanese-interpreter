@@ -59,10 +59,6 @@ export default async function SelfIntroduction({
                 <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start relative z-10">
                     {/* Left: Image */}
                     <div className="relative order-1 lg:order-1 mt-4 lg:mt-0">
-                        {/* Dot Pattern Overlay */}
-                        {/* <div className="absolute -top-6 -right-6 w-32 h-32 opacity-10 hidden md:block"
-                            style={{ backgroundImage: 'radial-gradient(#12aa91 2px, transparent 2px)', backgroundSize: '16px 16px' }}
-                        ></div> */}
 
                         {/* Main Image */}
                         <div className="overflow-hidden shadow-2xl relative z-10">
@@ -108,10 +104,10 @@ export default async function SelfIntroduction({
 
             {/* Team Members Section */}
             <section className="w-full bg-white py-8 md:py-12 px-4 md:px-12">
-                <div className="w-55  text-center justify-center mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-bold bg-[#e6f6f4] text-center text-gray-800 mb-8 md:mb-12 rounded-lg">
+                <div className="w-full text-center justify-center mb-2">
+                    <span className="bg-[#f0f9f8] text-[#12aa91] px-4 py-1.5 rounded-lg text-sm font-semibold tracking-wide">
                         {t("teamMember.title")}
-                    </h2>
+                    </span>
                 </div>
                 <div className="max-w-6xl mx-auto">
                     <p className="text-center text-5xl font-semibold text-black mb-8 md:mb-12">

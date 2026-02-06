@@ -33,13 +33,13 @@ export function TeamMemberCard({ name, role, description, image }: TeamMemberCar
                         className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                 </div>
-                
+
                 {/* Plus Button */}
                 <button
                     onClick={() => setShowSocial(!showSocial)}
-                    className="absolute bottom-2 right-22 bg-[#12aa91] rounded-full p-2 shadow-lg border border-gray-200 hover:bg-gray-50 transition-all duration-300 z-10"
+                    className="absolute bottom-2 right-22 bg-[#12aa91] rounded-full p-2 shadow-lg border border-gray-200 hover:bg-[#18917d] transition-all duration-300 z-10"
                 >
-                    <Plus 
+                    <Plus
                         className={`w-5 h-5 text-white transition-transform duration-300 ${showSocial ? 'rotate-45' : ''}`}
                     />
                 </button>

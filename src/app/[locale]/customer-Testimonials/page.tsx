@@ -17,7 +17,7 @@ export default async function CustomerTestimonials({
 
     // Get testimonials data
     const testimonials = t.raw("testimonials.items");
-    
+
     // Map testimonial names to their images
     const testimonialImages: { [key: string]: any } = {
         "Reiko": ReikoImage,

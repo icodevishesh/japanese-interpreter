@@ -322,7 +322,7 @@
         "item6": "Providing comprehensive support in Japanese, creating an environment where you can travel with peace of mind"
     },
     "teamMember": {
-        "title": "Our Team",
+        "title": "Team Members",
         "description": "Meeting with our team of experts",
         "member1": {
             "name": "Sanjay Dhingra",
@@ -339,7 +339,7 @@
             "role": "Japanese Language Expert",
             "description": "Currently working as a Japanese interpreter and translator at Maruti Suzuki India Limited (Gurgaon)."
         }
-    }, 
+    },
     "homehero": {
         "title": "Home Stay",
         "home": "Home",
@@ -365,23 +365,23 @@
     },
     "expitem": {
         "item1": {
-        "title": "Indian Cuisine Experience"
-    },
-    "item2": {
-        "title": "Experience How To Wrap A Sari (Dressing)"
-    },
-    "item3": {
-        "title": "Henna art experience (henna tattoo)"
-    },
-    "item4": {
-        "title": "Ayurvedic massage (Shirodhara)"
-    },
-    "item5": {
-        "title": "Palmistry and fortune telling"
-    },
-    "item6": {
-        "title": "Yoga experience"
-    }
+            "title": "Indian Cuisine Experience"
+        },
+        "item2": {
+            "title": "Experience How To Wrap A Sari (Dressing)"
+        },
+        "item3": {
+            "title": "Henna art experience (henna tattoo)"
+        },
+        "item4": {
+            "title": "Ayurvedic massage (Shirodhara)"
+        },
+        "item5": {
+            "title": "Palmistry and fortune telling"
+        },
+        "item6": {
+            "title": "Yoga experience"
+        }
     },
     "dressing": {
         "title": "Traditional Saree Wearing Experience",
@@ -507,6 +507,5 @@
         "title": "Inquiry",
         "home": "Home",
         "inquiry": "Inquiry"
-
     }
 }
