@@ -14,31 +14,43 @@
         "title": "Japanese Interpreter & Guide Service",
         "subtitle": "Japanese language support for travel, cultural experiences, and homestay in India."
     },
+    "ytVideo": {
+        "title": "Japanese interpreter included | India travel support",
+        "subtitle": "This is an introductory video about our India travel support service with Japanese interpretation. If this is your first time using our service, please watch this video first."
+    },
     "selfIntro": {
         "badge": "Self-Introduction",
         "title": "Balma BK",
+        "subtitle": "We provide travel and accommodation support in India for Japanese travelers, with services available in Japanese. I will be responsible for itinerary planning, local transportation, and communication during cultural experiences.",
+        "experience": "Experience and qualifications",
         "item1": "Certified tour guide by the Ministry of Tourism, Government of India",
-        "item2": "PAN India Tourist Guide Qualification",
-        "item3": "Private and group tours for over 3,500 people across India",
-        "item4": "For over 35 years, we have welcomed over 2,500 Japanese guests into our homestay program.",
-        "item5": "24 years of experience in import/export business between Japan and India"
+        "item2": "Holds a PAN India (all-India) tourism guide certification.",
+        "item3": "Experience in handling tours throughout India: Approximately 3,500 participants in total.",
+        "item4": "Hosting Japanese guests for homestays: Over 35 years (approximately 2,500 guests in total)",
+        "item5": "24 years of experience in import and export business between Japan and India"
     },
     "stay": {
         "ctaTitle": "A tour of India's World Heritage sites",
         "ctaButton": "Learn more",
         "badge": "Welcome to our home in India!",
-        "title": "A special trip for you to get a deeper understanding of local life",
+        "title": "About homestay",
+        "description": {
+            "1": "Accommodation details will be provided in advance",
+            "2": "Privacy is respected during your stay",
+            "3": "Meal details can be confirmed in advance"
+        },
         "deluxeRoom": "DELUXE ROOM",
         "deluxeRoomDesc": "Homestay with breakfast",
         "standardRoom": "STANDARD ROOM",
         "standardRoomDesc": "Homestay with breakfast",
         "standardRoomInfo": "1 person: 13,700 yen | 2 people: 16,300 yen (incl. breakfast)",
-        "deluxeRoomInfo": "1 person: 13,700 yen | 2 people: 16,300 yen (incl. breakfast)"
+        "deluxeRoomInfo": "1 person: 13,700 yen | 2 people: 16,300 yen (incl. breakfast)",
+        "meals": "Accommodation conditions and meal details will be explained in advance."
     },
     "experiences": {
         "badge": "Deeply experience Indian culture! A special trip with a homestay",
-        "title": "This is your chance to experience authentic Indian culture, learn, and connect with the local community!",
-        "description": "Don't miss this wonderful opportunity to fully experience the magic of India and learn new skills through authentic traditional classes and experiences. We are offering the following special traditional classes to Japanese tourists. Why not join us and experience Indian culture firsthand?",
+        "title": "Cultural Experience Information",
+        "description": "Participation is not required. The program can be adjusted according to your preferences, health condition, and schedule. You will have the opportunity to directly experience India’s traditional culture and way of life, deepening your understanding of the journey.",
         "card1": {
             "title": "Ayurvedic Massage (Shirodhara)",
             "desc": "Traditional healing therapy for complete relaxation and rejuvenation."
@@ -64,10 +76,159 @@
     "tourism": {
         "badge": "Safe and secure journey (accompanied by a government-certified tour guide)",
         "title": "For Those Who Just Can't Get Enough Of The Classics, Customize Your Own Indian Adventure With A Tour!",
+        "homebtn":"Home",
         "north": "North India tourism here!",
+        "northpg": {
+            "title": "North",
+            "cities":[
+                {
+                    "name":"Delhi",
+                    "loc":"New Delhi, Old Delhi"
+                },
+                {
+                    "name":"Jaipur",
+                    "loc":"Pink City, Royal Palace"
+                },
+                {
+                    "name":"Agra",
+                    "loc":"Taj Mahal City"
+                },
+                {
+                    "name":"Varanasi",
+                    "loc":"The Ganges River, a sacred place for Hindus"
+                },
+                {
+                    "name":"Haridwar",
+                    "loc":"The Ganges River, a sacred place for Hindus"
+                },
+                {
+                    "name":"Rishikesh",
+                    "loc":"Yoga capital of the World"
+                },
+                {
+                    "name":"Amritsar",
+                    "loc":"The spiritual center of Sikhism"
+                },
+                {
+                    "name":"Shimla/Manali",
+                    "loc":"Hill Stations"
+                }
+            ]
+        },
         "south": "South India tourism here!",
+        "Southpg": {
+            "title": "South",
+            "cities":[
+                {
+                    "name": "Chennai",
+                    "loc":"capital of Tamil Nadu"
+                },
+                {
+                    "name": "Madurai",
+                    "loc":"famous hindu temple"
+                },
+                {
+                    "name": "Bangalore",
+                    "loc":"India's IT hub"
+                },
+                {
+                    "name": "Mysore",
+                    "loc":"Grand Palace and Yoga Center"
+                },
+                {
+                    "name": "Hampi",
+                    "loc":"UNESCO Cultural Heritage Site"
+                },
+                {
+                    "name": "Goa",
+                    "loc":"Beach Destinations"
+                },
+                {
+                    "name": "Kerala",
+                    "loc":"Backwaters and Ayurveda"
+                },
+                {
+                    "name": "Rameshwaram",
+                    "loc":"a major Hindu pilgrimage site and one of the four Char Dham centers"
+                }
+            ]
+        },
         "east": "East India Tourism here!",
-        "west": "Western India tourism here!"
+        "Eastpg": {
+            "title": "East",
+            "cities":[
+                {
+                    "name":"Kolkata",
+                    "loc":"A cultural and historical hub"
+                },
+                {
+                    "name":"Darjeeling",
+                    "loc":"View of tea plantations and the Himalayas"
+                },
+                {
+                    "name":"Bodh Gaya",
+                    "loc":"Buddhist pilgrimage site"
+                },
+                {
+                    "name":"Puri",
+                    "loc":"Hindu Pilgrimage Center"
+                },
+                {
+                    "name":"Sikkim",
+                    "loc":"A small Himalayan country"
+                },
+                {
+                    "name":"Kaziranga National Park",
+                    "loc":"Assam - Home of the Indian rhinoceros"
+                },
+                {
+                    "name":"Nalanda ",
+                    "loc":"Site of an ancient, prestigious university "
+                },
+                {
+                    "name":"Ziro Valley",
+                    "loc":"Known for its scenic beauty and the Ziro Music Festival"
+                }
+            ]
+        },
+        "west": "Western India tourism here!",
+        "Westpg": {
+            "title": "West",
+            "cities":[
+                {
+                    "name":"Mumbai",
+                    "loc":"Bollywood, financial center"
+                },
+                {
+                    "name":"Pune",
+                    "loc":"A city of history and IT industry"
+                },
+                {
+                    "name":"Aurangabad",
+                    "loc":"Ellora and Ajanta ruins"
+                },
+                {
+                    "name":"Ahmedabad",
+                    "loc":"Cultural city of Gujarat"
+                },
+                {
+                    "name":"Goa",
+                    "loc":"One of India's leading beach resorts"
+                },
+                {
+                    "name":"Rann of Kutch",
+                    "loc":"white salt desert"
+                },
+                {
+                    "name":"Gir National Park",
+                    "loc":"home to Asiatic lions"
+                },
+                {
+                    "name":"Rajasthan",
+                    "loc":"Jaipur, Udaipur, Jaisalmer"
+                }
+            ]
+        }
     },
     "testimonials": {
         "badge": "Customer Testimonials",
@@ -75,34 +236,42 @@
         "button": "Click to see!",
         "items": [
             {
+                "id": "Reiko",
                 "name": "Reiko",
                 "text": "I met Verma 20 years ago and fell in love with India I would recommend a homestay with Verma's family to any beginner in India. Verma is one of the few governments certified guides who can guide you throughout India. Please feel free to contact Mr. Verma for any consultation regarding India, including Japanese, English, French, Indian, etc. interpretation and business coordination consultation."
             },
             {
+                "id": "Kazuyo",
                 "name": "Kazuyo Konaka",
                 "text": "I have been staying with Verma's family for more than 10 years now. My job is to translate silk thread cloth and other fabrics to be made in India. He is very helpful when I ask him to do a lot of things, and they are always willing to help me find them. He understands the hearts of Japanese people very well. He is a grateful person."
             },
             {
+                "id": "Noriko",
                 "name": "Ms. Noriko Shinna",
                 "text": "I was very anxious about my first trip to India alone, but I was able to enjoy sightseeing in India while staying at Verma's house with a homestay in a safe and comfortable environment."
             },
             {
+                "id": "Rina",
                 "name": "Rina Sasaki",
                 "text": "During my homestay, the meals cooked by my host's wife were incredibly delicious, and I was able to enjoy a variety of dishes every day. The room was very clean, and the sheets were changed every time I left. They also did my laundry, which I was very happy about. The room was spacious, so I was able to stay comfortably with my children. It was a truly wonderful experience. On the tour, they suggested various places to visit in response to my requests, and I created unforgettable memories. I will never forget the views of the upper reaches of the Ganges River. India is home to many World Heritage Sites, so wherever we went was amazing. The Taj Mahal is something everyone should see at least once in their lifetime. The Pink City was hot, but beautiful. Mr. Varma's guide was very easy to understand and informative, making this experience even more wonderful. Thank you so much for all your help."
             },
             {
+                "id": "Akemi",
                 "name": "Akemi Harisienne",
                 "text": "I've visited India about five times this year, and I'd like to share my wonderful experience staying at Barma! The meals, from local Indian dishes to udon and somen noodles, were all prepared by Barma's lovely wife and helper, and were absolutely delicious. They catered to my preferences, so I was able to tailor my meals to my liking! The shower and sink were in the spacious, clean bathroom, with hot water and a ceiling fan. A hairdryer was provided in the room, and even though I forgot my plug adapter from Japan, they provided one for me. I had no issues and actually enjoyed a very comfortable stay in India. Since I was the only guest, I was able to relax without worrying about others. I was able to work in the spacious room, and there were plenty of drinks and snacks available. Barma has been serving Japanese clients for nearly 30 years, and his personality is charming. He speaks fluent Japanese with perfect pronunciation and provides hospitality that is second to none in Japan! He also shares information about local events, culture, and tips on how to ride the trains, so I gain more knowledge every time I visit India. I highly recommend staying with Varma and getting to know him to make the most of your experience in India!"
             },
             {
+                "id": "Madoka",
                 "name": "Madoka",
                 "text": "Mr. Varma is fluent in Japanese, so I was able to tour India with ease, even though it was my first time there. During the tour, Mr. Varma paid for any expenses, which alleviated my concerns about handling money in India. I was able to enjoy myself without any worries. Although I was interested in Indian history and culture, I didn't have much prior knowledge. However, the explanations during the tour were thorough and easy to understand, and I learned a lot. Staying at a homestay was more comfortable than staying in a hotel in India, and I felt safe while sleeping. Best of all, Mrs. Varma's cooking was incredibly delicious. At first, I was unfamiliar with the food while sightseeing, but Mrs. Varma's cooking was delicious and she was a thoughtful person, so my homestay experience was truly wonderful. I would definitely like to go again!"
             },
             {
+                "id": "Akiko",
                 "name": "Akiko Kobayashi",
                 "text": "My homestay experience with the Varma Family: I had the opportunity to stay with my husband and son at Varma's home. The location is close to the South Delhi metro station and has a security guard at the entrance, making it safe. Varma and his helper warmly welcomed us upon our arrival. Upon entering the home, we were greeted with delightful Indian sweets, much to my son's delight. The room had a shower, toilet, air conditioning, and a door leading to a balcony. While I've stayed with many Indian families before, Varma's home allowed me to relax and enjoy life at my own pace. While Varma's family lives a modern lifestyle, they are also well-versed in traditional Indian culture and shared many fascinating stories with us. Varma, who works as a Japanese interpreter overseas, has a deep understanding of Japanese people. With his extensive experience supporting international students and in business, he is a great resource for anyone looking to start a new life in India. Varma's wife is a cheerful and talented cook. Their home is close to Delhi Airport, so I highly recommend including Varma's home in your India itinerary!"
             },
             {
+                "id": "Sachi",
                 "name": "Sachi Nakagaki",
                 "text": "This was my third trip to India, eight years in the making. I fell in love with India thanks to my travel coordinator, Varma, who safely guided me to all the places I wanted to visit. I always ask Varma for help when I go to India. We ran into some trouble on the way to the Taj Mahal, a UNESCO World Heritage Site, but Varma quickly arranged for us to transfer from the car to the train, allowing us to enjoy our sightseeing smoothly. My homestay was a beautiful apartment, and despite my late arrival, I was warmly welcomed with flowers, a welcome drink, and snacks. The homemade Indian food, including okra and potato curry and chapatis, was delicious. I was surprised by the unique dessert: yogurt with pomegranate and tempura crumbs. This trip reaffirmed my impression that the people of India are generous, kind, and full of faith and love. I had so many wonderful experiences this time. Thank you!"
             }
@@ -118,7 +287,8 @@
             "links": {
                 "website": "Website",
                 "profile": "Company Profile",
-                "homestay": "Homestay and Cultural Experiences",
+                "homestay": "Homestay",
+                "culturalExperiences": "Cultural Experiences",
                 "tours": "Tours and Travel",
                 "testimonials": "Customer Testimonials"
             }
@@ -135,7 +305,12 @@
             "officeLabel": "Office Visit",
             "officeValue": "India"
         },
-        "copyright": "© 2024 Copyright belongs to Japanese Interpreter. Unauthorized reproduction prohibited."
+        "address": {
+            "value": "Address",
+            "title": "Main Office - TARUNA IMPEX",
+            "address": "8th Floor, C-802, K M Apartment, Plot No. 12, Sector 12 Dwarka, New Delhi, South West Delhi, Delhi, 110078"
+        },
+        "copyright": " 2024 Copyright belongs to Japanese Interpreter. Unauthorized reproduction prohibited."
     },
     "contactForm": {
         "badge": "Inquiry",
@@ -339,7 +514,7 @@
             "role": "Japanese Language Expert",
             "description": "Currently working as a Japanese interpreter and translator at Maruti Suzuki India Limited (Gurgaon)."
         }
-    }, 
+    },
     "homehero": {
         "title": "Home Stay",
         "home": "Home",
@@ -365,122 +540,122 @@
     },
     "expitem": {
         "item1": {
-        "title": "Indian Cuisine Experience"
-    },
-    "item2": {
-        "title": "Experience How To Wrap A Sari (Dressing)"
-    },
-    "item3": {
-        "title": "Henna art experience (henna tattoo)"
-    },
-    "item4": {
-        "title": "Ayurvedic massage (Shirodhara)"
-    },
-    "item5": {
-        "title": "Palmistry and fortune telling"
-    },
-    "item6": {
-        "title": "Yoga experience"
-    }
-    },
-    "dressing": {
-        "title": "Traditional Saree Wearing Experience",
-        "home": "Home",
-        "TraditionalSareeWearingExperience": "Traditional Saree Wearing Experience"
-    },
-    "DressPrice": {
-        "Price": "Price: 2,500 yen per person",
-        "exp": "explanation",
-        "item1": "The sari (similar to the kimono) is an iconic Indian garment with a rich history dating back thousands of years.",
-        "item2": "Embodies India's rich cultural heritage and family traditions and continues to evolve as a timeless fashion statement that connects the past and present.",
-        "item3": "Create unforgettable memories by experiencing sari dressing and participating in local customs.",
-        "item4": "This is a best-selling class and we highly recommend it."
-    },
-    "hennatattoo": {
-        "title": "Mehendi/Heena Experience",
-        "home": "Home",
-        "HennaArtExperience": "Mehendi/Heena Experience"
-    },
-    "tattooPrice": {
-        "title": "Price",
-        "Price": "Price: 2,500 yen per person",
-        "exp": "explanation",
-        "item1": "Heena/Mehendi incorporates Indian designs and patterns, allowing you to enjoy beautiful body art without any permanent commitment.",
-        "item2": "The process of applying mehendi is also meditative and relaxing, allowing you to relax and enjoy the moment.",
-        "item3": "The mehendi design will be a one-of-a-kind souvenir that will remind you of your time in India",
-        "item4": "It's a rare experience, so I encourage you to give it a try."
-    },
-    "shirodhara": {
-        "title": "Ayurvedic massage (Shirodhara)",
-        "home": "Home",
-        "AyurvedicMassageShirodhara": "Ayurvedic massage (Shirodhara)"
-    },
-    "shirodharaPrice": {
-        "Price": "Price: 10,000 yen/person",
-        "desc": "(including pick-up at the time of drop-off)",
-        "exp": "explanation",
-        "item1": "Ayurvedic massage, particularly Shirodhara, is one of the most deeply therapeutic and rejuvenating techniques in Ayurveda, with numerous benefits that contribute to overall health and vitality. By running warm oil over the forehead and targeting the \"third eye\" area, it induces deep relaxation, reduces stress, promotes a sense of calm, and improves sleep quality."
-    },
-    "Yoga": {
-        "title": "Yoga experience",
-        "home": "Home",
-        "YogaExperience": "Yoga experience"
-    },
-    "yogaexp": {
-        "title": "Yoga experience",
-        "item1": "Yoga improves flexibility, strength, balance and coordination, contributing to overall physical fitness.",
-        "item2": "It also encourages mindfulness and fosters a deeper connection between body and mind.",
-        "item3": "Participating in yoga can help you address physical health, mental clarity, emotional balance, and spiritual growth, enhancing your overall wellness.",
-        "item4": "This class fills up quickly, so we recommend booking early."
-    },
-    "IndianCuisine": {
-        "title": "Veg and Non-Veg",
-        "home": "Home",
-        "VagAndNonVeg": "Veg and Non-Veg",
-        "IndianCuisineExperience": "Veg and Non-Veg"
-    },
-    "IndianCuisinePrice": {
-        "title": "Price",
-        "item1": "Price: 2,500 yen per person",
-        "item2": "Price: 6,000 yen for two person"
-    },
-    "veggie": {
-        "title": "Veggie",
-        "item1": "beans",
-        "item2": "Vegetable curry (2 curries)",
-        "item3": "Butter Chicken Curry",
-        "item4": "Roti/Paratha/Chapati"
-    },
-    "ComplementaryDrinks": {
-        "title": "Complementary Drinks",
-        "item1": "Indian Masala Tea",
-        "item2": "Cold Coffee",
-        "item3": "Lassi",
-        "item4": "Milkshake",
-        "item5": "Fresh Sweet Lime Soda",
-        "item6": "Black tea",
-        "item7": "Black coffee",
-        "item8": "Soda Indian Masala Drinks"
-    },
-    "complementaryaspects": {
-        "title": "Complementary aspects",
-        "item1": "Rice/Vegetable Biryani (Pulao)",
-        "item2": "yogurt",
-        "item3": "Achar",
-        "item4": "Papad",
-        "item5": "Mint sauce"
-    },
-    "Palmistry": {
-        "title": "Palm Reading/Fortune Telling",
-        "home": "Home",
-        "PalmistryExperience": "Palm Reading/Fortune Telling"
-    },
-    "palmistryexp": {
-        "title": "Price: 4,000 yen per person",
-        "exp": "explanation",
-        "item1": "By experiencing palm reading and fortune telling, you can experience the local traditions and beliefs and learn about the culture of the place you are visiting.",
-        "item2": "They can provide a unique perspective on your personality traits, strengths, and potential challenges.",
-        "item3": "Hearing interpretations of one's past, present, and possible future encourages self-reflection and introspection."
+            "title": "Indian Cuisine Experience"
+        },
+        "item2": {
+            "title": "Experience How To Wrap A Sari (Dressing)"
+        },
+        "item3": {
+            "title": "Henna art experience (henna tattoo)"
+        },
+        "item4": {
+            "title": "Ayurvedic massage (Shirodhara)"
+        },
+        "item5": {
+            "title": "Palmistry and fortune telling"
+        },
+        "item6": {
+            "title": "Yoga experience"
+        },
+        "dressing": {
+            "title": "Traditional Saree Wearing Experience",
+            "home": "Home",
+            "TraditionalSareeWearingExperience": "Traditional Saree Wearing Experience",
+            "DressPrice": {
+                "Price": "Price: 2,500 yen per person",
+                "exp": "explanation",
+                "item1": "The sari (similar to the kimono) is an iconic Indian garment with a rich history dating back thousands of years.",
+                "item2": "Embodies India's rich cultural heritage and family traditions and continues to evolve as a timeless fashion statement that connects the past and present.",
+                "item3": "Create unforgettable memories by experiencing sari dressing and participating in local customs.",
+                "item4": "This is a best-selling class and we highly recommend it."
+            }
+        },
+        "hennatattoo": {
+            "title": "Mehendi/Heena Experience",
+            "home": "Home",
+            "HennaArtExperience": "Mehendi/Heena Experience"
+        },
+        "tattooPrice": {
+            "title": "Price",
+            "Price": "Price: 2,500 yen per person",
+            "exp": "explanation",
+            "item1": "Heena/Mehendi incorporates Indian designs and patterns, allowing you to enjoy beautiful body art without any permanent commitment.",
+            "item2": "The process of applying mehendi is also meditative and relaxing, allowing you to relax and enjoy the moment.",
+            "item3": "The mehendi design will be a one-of-a-kind souvenir that will remind you of your time in India",
+            "item4": "It's a rare experience, so I encourage you to give it a try."
+        },
+        "shirodhara": {
+            "title": "Ayurvedic massage (Shirodhara)",
+            "home": "Home",
+            "AyurvedicMassageShirodhara": "Ayurvedic massage (Shirodhara)"
+        },
+        "shirodharaPrice": {
+            "Price": "Price: 10,000 yen/person",
+            "desc": "(including pick-up at the time of drop-off)",
+            "exp": "explanation",
+            "item1": "Ayurvedic massage, particularly Shirodhara, is one of the most deeply therapeutic and rejuvenating techniques in Ayurveda, with numerous benefits that contribute to overall health and vitality. By running warm oil over the forehead and targeting the \"third eye\" area, it induces deep relaxation, reduces stress, promotes a sense of calm, and improves sleep quality."
+        },
+        "Yoga": {
+            "title": "Yoga experience",
+            "home": "Home",
+            "YogaExperience": "Yoga experience"
+        },
+        "yogaexp": {
+            "title": "Yoga experience",
+            "item1": "Yoga improves flexibility, strength, balance and coordination, contributing to overall physical fitness.",
+            "item2": "It also encourages mindfulness and fosters a deeper connection between body and mind.",
+            "item3": "Participating in yoga can help you address physical health, mental clarity, emotional balance, and spiritual growth, enhancing your overall wellness.",
+            "item4": "This class fills up quickly, so we recommend booking early."
+        },
+        "IndianCuisine": {
+            "title": "Veg and Non-Veg",
+            "home": "Home",
+            "VagAndNonVeg": "Veg and Non-Veg",
+            "IndianCuisineExperience": "Veg and Non-Veg"
+        },
+        "IndianCuisinePrice": {
+            "title": "Price",
+            "item1": "Price: 2,500 yen per person",
+            "item2": "Price: 6,000 yen for two person"
+        },
+        "veggie": {
+            "title": "Veggie",
+            "item1": "beans",
+            "item2": "Vegetable curry (2 curries)",
+            "item3": "Butter Chicken Curry",
+            "item4": "Roti/Paratha/Chapati"
+        },
+        "ComplementaryDrinks": {
+            "title": "Complementary Drinks",
+            "item1": "Indian Masala Tea",
+            "item2": "Cold Coffee",
+            "item3": "Lassi",
+            "item4": "Milkshake",
+            "item5": "Fresh Sweet Lime Soda",
+            "item6": "Black tea",
+            "item7": "Black coffee",
+            "item8": "Soda Indian Masala Drinks"
+        },
+        "complementaryaspects": {
+            "title": "Complementary aspects",
+            "item1": "Rice/Vegetable Biryani (Pulao)",
+            "item2": "yogurt",
+            "item3": "Achar",
+            "item4": "Papad",
+            "item5": "Mint sauce"
+        },
+        "Palmistry": {
+            "title": "Palm Reading/Fortune Telling",
+            "home": "Home",
+            "PalmistryExperience": "Palm Reading/Fortune Telling"
+        },
+        "palmistryexp": {
+            "title": "Price: 4,000 yen per person",
+            "exp": "explanation",
+            "item1": "By experiencing palm reading and fortune telling, you can experience the local traditions and beliefs and learn about the culture of the place you are visiting.",
+            "item2": "They can provide a unique perspective on your personality traits, strengths, and potential challenges.",
+            "item3": "Hearing interpretations of one's past, present, and possible future encourages self-reflection and introspection."
+        }
     },
     "OptionalTour": {
         "title": "Optional Tour",
@@ -506,7 +681,9 @@
     "inquiry": {
         "title": "Inquiry",
         "home": "Home",
-        "inquiry": "Inquiry"
-
+        "inquiry": "Inquiry",
+        "map": "Map",
+        "visit": "Visit Us",
+        "findus": "Find us at our office in New Delhi, India"
     }
 }

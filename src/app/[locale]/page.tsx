@@ -38,27 +38,31 @@ export default async function Home({
             title: t("experiences.card1.title"),
             desc: t("experiences.card1.desc"),
             image: AyurvedicMassageImage,
+            link: `/${locale}/Experiences/ayurvedic-message`
         },
         {
             title: t("experiences.card2.title"),
             desc: t("experiences.card2.desc"),
             image: IndianCookingImage,
-            rank: t("experiences.card2.rank"),
+            link: `/${locale}/Experiences/indian-cuisine-experience`
         },
         {
             title: t("experiences.card3.title"),
             desc: t("experiences.card3.desc"),
             image: HennaArtImage,
+            link: `/${locale}/Experiences/henna-art-experiences`
         },
         {
             title: t("experiences.card4.title"),
             desc: t("experiences.card4.desc"),
             image: YogaImage,
+            link: `/${locale}/Experiences/yoga-experience`
         },
         {
             title: t("experiences.card5.title"),
             desc: t("experiences.card5.desc"),
             image: SareeImage,
+            link: `/${locale}/Experiences/traditional-saree-wearing-experience`
         },
     ];
 
@@ -68,14 +72,17 @@ export default async function Home({
 
             {/* Hero section */}
             <section className="w-full px-4 md:px-12">
-                <h1 className="md:hidden text-center text-xl font-extrabold text-[#1a1a1a] mt-6 tracking-tight">
-                    {t("hero.ctaTitle")}
-                </h1>
+                {/* Section Header */}
+                <div className="flex flex-col items-center text-center mt-12">
+                    <h2 className="text-2xl md:text-4xl font-bold text-[#1a1a1a] max-w-4xl leading-[1.2] tracking-tight mb-8">
+                        {t("ytVideo.title")}
+                    </h2>
+                    <p className="text-gray-500 max-w-3xl text-sm md:text-md leading-relaxed text-justify md:text-center">
+                        {t("ytVideo.subtitle")}
+                    </p>
+                </div>
                 {/* Video block */}
                 <div className="max-w-5xl mx-auto py-6 md:py-12 relative">
-                    <div className="absolute top-16 left-1/2 -translate-x-1/2 z-10">
-                        <span className="md:text-4xl hidden md:block text-white font-semibold text-center">{t("hero.ctaTitle")}</span>
-                    </div>
                     <YouTubePlayer
                         videoId="aOJ2SXL4l4s"
                         title="Indian Tour HomeStay"
@@ -126,6 +133,13 @@ export default async function Home({
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#1a1a1a] mt-6 mb-6 tracking-tight">
                             {t("selfIntro.title")}
                         </h2>
+                        <p className="text-gray-500 max-w-3xl text-sm md:text-md leading-relaxed text-justify md:text-left mb-4">
+                            {t("selfIntro.subtitle")}
+                        </p>
+
+                        <span className="text-md text-black font-extrabold tracking-wide mb-6 flex items-center uppercase">
+                            *{t("selfIntro.experience")}
+                        </span>
 
                         <ul className="space-y-4 w-full">
                             {[1, 2, 3, 4, 5].map((i) => (
@@ -144,31 +158,29 @@ export default async function Home({
             </section>
 
             {/* Stay section */}
-            <section id="homestay" className="w-full bg-[#f9fafb] py-12 md:py-24 px-4 md:px-12 relative overflow-hidden">
+            <section id="homestay" className="w-full bg-white py-12 md:py-24 px-4 md:px-12 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto relative z-10">
-                    {/* CTA Banner */}
-                    <div className="max-w-6xl mx-auto mb-18 bg-[#12aa91] rounded-xl p-6 md:p-12 relative overflow-hidden group">
-                        <div className="flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
-                            <h3 className="text-2xl md:text-4xl text-center md:text-left font-extrabold text-white leading-tight">
-                                {t("stay.ctaTitle")}
-                            </h3>
-
-                            <Link
-                                href="#contact-form"
-                                className="bg-white text-black px-6 py-2 md:px-12 md:py-4 rounded-xl font-bold hover:bg-gray-50 transition-all transform hover:scale-105 shadow-lg whitespace-nowrap">
-                                {t("stay.ctaButton")}
-                            </Link>
-                        </div>
-                    </div>
 
                     {/* Section Header */}
                     <div className="flex flex-col items-center text-center mb-16">
                         <span className="bg-[#e6f6f4] text-[#12aa91] px-4 py-2 rounded-lg text-sm font-bold mb-8">
                             {t("stay.badge")}
                         </span>
-                        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#1a1a1a] max-w-3xl leading-[1.15] tracking-tight">
+                        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#1a1a1a] max-w-3xl leading-[1.15] tracking-tight mb-6">
                             {t("stay.title")}
                         </h2>
+                        <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mt-4">
+                            {[1, 2, 3].map((i) => (
+                                <li key={i} className="flex items-center gap-3 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                                    <div className="shrink-0 w-10 h-10 bg-[#f0f9f8] rounded-full flex items-center justify-center">
+                                        <BadgeCheck className="text-[#12aa91] h-6 w-6" />
+                                    </div>
+                                    <p className="text-sm md:text-base text-gray-600 font-medium">
+                                        {t(`stay.description.${i}`)}
+                                    </p>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
 
                     {/* Room Showcase */}
@@ -179,14 +191,18 @@ export default async function Home({
                                 title: t("stay.standardRoom"),
                                 description: t("stay.standardRoomDesc"),
                                 price: t("stay.standardRoomInfo"),
+                                meal: t("stay.meals"),
                                 alt: "Standard Room",
+                                link: `/${locale}/standard-room`,
                             },
                             {
                                 image: DeluxeRoomImage,
                                 title: t("stay.deluxeRoom"),
                                 description: t("stay.deluxeRoomDesc"),
                                 price: t("stay.deluxeRoomInfo"),
+                                meal: t("stay.meals"),
                                 alt: "Deluxe Room",
+                                link: `/${locale}/super-deluxe-room`,
                             },
                         ]}
                     />

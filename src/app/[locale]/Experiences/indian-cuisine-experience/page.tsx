@@ -21,7 +21,7 @@ export default async function IndianCuisine({
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     {/* Main Heading */}
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#12aa91] tracking-tight">
-                        {t("IndianCuisine.title")}
+                        {t("expitem.IndianCuisine.title")}
                     </h1>
                     <nav className="mb-6">
                         <ol className="flex items-center justify-center space-x-4 mt-4 text-sm">
@@ -30,12 +30,12 @@ export default async function IndianCuisine({
                                     href={`/${locale}`}
                                     className="text-[#12aa91] hover:text-[#0f8b73] transition-colors"
                                 >
-                                    {t("IndianCuisine.home")}
+                                    {t("expitem.IndianCuisine.home")}
                                 </a>
                             </li>
                             <li className="text-[#12aa91]">/</li>
                             <li className="text-[#12aa91] font-medium">
-                                {t("IndianCuisine.IndianCuisineExperience")}
+                                {t("expitem.IndianCuisine.IndianCuisineExperience")}
                             </li>
                         </ol>
                     </nav>
@@ -61,14 +61,14 @@ export default async function IndianCuisine({
                                 {/* Price */}
                                 {/* <div className="mb-8">
                                     <h2 className="text-2xl md:text-3xl text-start font-bold text-black mb-4">
-                                        {t("IndianCuisine.title")}
+                                        {t("expitem.IndianCuisine.title")}
                                     </h2>
                                 </div> */}
 
                                 {/* experience Items */}
                                 <div className="">
                                     <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                                        {t("IndianCuisinePrice.title")}
+                                        {t("expitem.IndianCuisinePrice.title")}
                                     </h3>
                                     <div className="">
                                         {[1, 2].map((item) => (
@@ -88,7 +88,7 @@ export default async function IndianCuisine({
                                                 </svg>
 
                                                 <p className="text-gray-600">
-                                                    {t(`IndianCuisinePrice.item${item}`)}
+                                                    {t(`expitem.IndianCuisinePrice.item${item}`)}
                                                 </p>
                                             </div>
                                         ))}
@@ -97,7 +97,7 @@ export default async function IndianCuisine({
                                 </div>
                                 <br/>
                                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                                    {t("veggie.title")}
+                                    {t("expitem.veggie.title")}
                                 </h3>
                                 <div className="flex flex-wrap items-center gap-x-4 text-gray-600">
                                     {[1, 2, 3, 4].map((item) => (
@@ -114,14 +114,14 @@ export default async function IndianCuisine({
                                                 </svg>
                                             </div>
                                             <span className="whitespace-nowrap">
-                                                {t(`veggie.item${item}`)}
+                                                {t(`expitem.veggie.item${item}`)}
                                             </span>
                                         </div>
                                     ))}
                                 </div>
                                 <br/>
                                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                                    {t("ComplementaryDrinks.title")}
+                                    {t("expitem.ComplementaryDrinks.title")}
                                 </h3>
                                 <div className="flex flex-wrap items-center gap-x-4 text-gray-600">
                                     {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
@@ -138,14 +138,14 @@ export default async function IndianCuisine({
                                                 </svg>
                                             </div>
                                             <span className="whitespace-nowrap">
-                                                {t(`ComplementaryDrinks.item${item}`)}
+                                                {t(`expitem.ComplementaryDrinks.item${item}`)}
                                             </span>
                                         </div>
                                     ))}
                                 </div>
                                 <br/>
                                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                                    {t("complementaryaspects.title")}
+                                    {t("expitem.complementaryaspects.title")}
                                 </h3>
                                 <div className="flex flex-wrap items-center gap-x-4 text-gray-600">
                                     {[1, 2, 3, 4, 5].map((item) => (
@@ -162,7 +162,7 @@ export default async function IndianCuisine({
                                                 </svg>
                                             </div>
                                             <span className="whitespace-nowrap">
-                                                {t(`complementaryaspects.item${item}`)}
+                                                {t(`expitem.complementaryaspects.item${item}`)}
                                             </span>
                                         </div>
                                     ))}

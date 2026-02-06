@@ -21,13 +21,13 @@ export default async function CustomerTestimonials({
     // Map testimonial names to their images
     const testimonialImages: { [key: string]: any } = {
         "Reiko": ReikoImage,
-        "Kazuyo Konaka": KazuyoImage,
-        "Ms. Noriko Shinna": NorikoImage,
-        "Rina Sasaki": "", // Add image when available
-        "Akemi Harisienne": "", // Add image when available
+        "Kazuyo": KazuyoImage,
+        "Noriko": NorikoImage,
+        "Rina": "", // Add image when available
+        "Akemi": "", // Add image when available
         "Madoka": "", // Add image when available
-        "Akiko Kobayashi": "", // Add image when available
-        "Sachi Nakagaki": "" // Add image when available
+        "Akiko": "", // Add image when available
+        "Sachi": "" // Add image when available
     };
 
 
@@ -83,9 +83,9 @@ export default async function CustomerTestimonials({
                             {/* Header */}
                             <div className="flex items-center gap-4 mb-4">
                                 {/* Profile Image */}
-                                {testimonialImages[item.name] ? (
+                                {testimonialImages[item.id] ? (
                                     <Image
-                                        src={testimonialImages[item.name]}
+                                        src={testimonialImages[item.id]}
                                         alt={item.name}
                                         width={56}
                                         height={56}

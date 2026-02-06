@@ -57,7 +57,7 @@ export default async function LocaleLayout({
             <body className={`${inter.className} ${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased`}>
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     {children}
-                    <Footer />
+                    <Footer locale={locale} />
                     <FloatingSocials locale={locale} />
                 </NextIntlClientProvider>
 

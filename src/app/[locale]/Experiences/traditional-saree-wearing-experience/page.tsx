@@ -1,6 +1,6 @@
 import { Navbar } from "@/src/components/Navbar";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import PalmistryImage from "@/src/assets/Palmistry.png";
+import DressingImage from "@/src/assets/Dressing.png";
 
 
 export default async function Dressing({
@@ -21,7 +21,7 @@ export default async function Dressing({
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     {/* Main Heading */}
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#12aa91] tracking-tight">
-                        {t("Palmistry.title")}
+                        {t("expitem.dressing.title")}
                     </h1>
                     <nav className="mb-6">
                         <ol className="flex items-center justify-center space-x-4 mt-4 text-sm">
@@ -30,12 +30,12 @@ export default async function Dressing({
                                     href={`/${locale}`}
                                     className="text-[#12aa91] hover:text-[#0f8b73] transition-colors"
                                 >
-                                    {t("Palmistry.home")}
+                                    {t("expitem.dressing.home")}
                                 </a>
                             </li>
                             <li className="text-[#12aa91]">/</li>
                             <li className="text-[#12aa91] font-medium">
-                                {t("Palmistry.PalmistryExperience")}
+                                {t("expitem.dressing.TraditionalSareeWearingExperience")}
                             </li>
                         </ol>
                     </nav>
@@ -48,10 +48,10 @@ export default async function Dressing({
                     <div className="overflow-hidden">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                             {/* Left side - Image */}
-                            <div className="relative h-64 lg:h-auto flex items-center justify-center">
+                           <div className="relative h-64 lg:h-auto flex items-center justify-center bg-white">
                                 <img
-                                    src={PalmistryImage.src}
-                                    alt="Palmistry Experience"
+                                    src={DressingImage.src}
+                                    alt="Traditional Saree Wearing Experience"
                                     className="max-w-full max-h-full object-contain border-2 border-[#12aa91] rounded-lg"
                                 />
                             </div>
@@ -61,17 +61,17 @@ export default async function Dressing({
                                 {/* Price */}
                                 <div className="mb-8">
                                     <h2 className="text-2xl md:text-3xl font-bold text-black">
-                                        {t("palmistryexp.title")}
+                                        {t("expitem.dressing.DressPrice.Price")}
                                     </h2>
                                 </div>
 
                                 {/* Explanation */}
                                 <div className="space-y-6">
                                     <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                                        {t("palmistryexp.exp")}
+                                        {t("expitem.dressing.DressPrice.exp")}
                                     </h3>
 
-                                    {[1, 2, 3].map((item, index) => (
+                                    {[1, 2, 3, 4].map((item, index) => (
                                         <div key={item}>
                                             <div className="flex items-start gap-4">
                                                 {/* Green check */}
@@ -91,7 +91,7 @@ export default async function Dressing({
 
                                                 {/* Text */}
                                                 <p className="text-gray-600 leading-relaxed">
-                                                    {t(`palmistryexp.item${item}`)}
+                                                    {t(`expitem.dressing.DressPrice.item${item}`)}
                                                 </p>
                                             </div>
 

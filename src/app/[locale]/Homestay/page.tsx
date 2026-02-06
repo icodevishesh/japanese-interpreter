@@ -3,8 +3,9 @@ import { ArrowUpRight } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import Image from "next/image";
-import StRoomImage from "@/src/assets/standardroom.jpg";
+import StandardRoomImage from "@/src/assets/standardroom.jpg";
 import DeluxeRoomImage from "@/src/assets/deeluxrrom1.jpeg";
+import RoomCarousal from "@/src/components/RoomCarousel";
 
 export default async function Homestay({
     params
@@ -16,7 +17,7 @@ export default async function Homestay({
     const t = await getTranslations();
 
     return (
-        <div>
+        <div className="bg-white">
             <Navbar locale={locale} />
 
             {/* Hero Section */}
@@ -45,75 +46,41 @@ export default async function Homestay({
                 </div>
             </section>
 
-            {/* 2nd section - Homestay Features */}
-            <section className="w-full bg-white py-12 md:py-16 px-4 md:px-12">
-                <div className="max-w-3xl mx-auto justify-center">
-                    <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 md:mb-12">
+            {/* Description Section */}
+            <section className="w-full bg-white py-8 md:py-10">
+                <div className="max-w-7xl mx-auto text-center mb-12">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1a1a1a] max-w-4xl mx-auto leading-tight tracking-tight mt-6">
                         {t("homestay.description")}
                     </h2>
-
-                </div>
-
-                <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start relative z-10">
-                    {/* Left: Content */}
-                    <div className="relative order-1 lg:order-2 mt-4 lg:mt-0">
-                        <div className="overflow-hidden shadow-2xl rounded-lg">
-                            <Image
-                                src={DeluxeRoomImage}
-                                alt="Indian Homestay Experience"
-                                className="w-full h-auto object-cover"
-                            />
-                        </div>
-                        {/* Overlay card */}
-                        <div className="absolute bottom-4 left-4 right-4 bg-white rounded-xl p-6 mb-8 flex items-center justify-between shadow-lg z-50">
-                            <div>
-                                <h3 className="text-xl font-semibold text-emerald-600 mb-2">
-                                    {t("room.room1.title")}
-                                </h3>
-                                <p className="text-sm text-gray-600 mb-1">
-                                    {t("room.room1.desc")}
-                                </p>
-                                {/* <p className="text-xs text-gray-500">
-                                    1 person: 13,700 yen | 2 people: 16,300 yen
-                                </p> */}
-                            </div>
-                            {/* Arrow */}
-                            <Link href={`/${locale}/super-deluxe-room`} className="w-12 h-12 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:bg-emerald-600 transition">
-                                <ArrowUpRight size={24} />
-                            </Link>
-                        </div>
-                    </div>
-
-                    {/* Right: Image */}
-                    <div className="relative order-2 lg:order-1 mt-4 lg:mt-0">
-                        <div className="overflow-hidden shadow-2xl rounded-lg">
-                            <Image
-                                src={StRoomImage}
-                                alt="Indian Homestay Experience"
-                                className="w-full h-auto object-cover"
-                            />
-                        </div>
-                        {/* Overlay card */}
-                        <div className="absolute bottom-4 left-4 right-4 bg-white rounded-xl p-6 mb-8 flex items-center justify-between shadow-lg z-50">
-                            <div>
-                                <h3 className="text-xl font-semibold text-emerald-600 mb-2">
-                                    {t("room.room2.title")}
-                                </h3>
-                                <p className="text-sm text-gray-600 mb-1">
-                                    {t("room.room2.desc")}
-                                </p>
-                                {/* <p className="text-xs text-gray-500">
-                                    1 person: 13,700 yen | 2 people: 16,300 yen
-                                </p> */}
-                            </div>
-                            {/* Arrow */}
-                            <Link href={`/${locale}/standard-room`} className="w-12 h-12 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:bg-emerald-600 transition">
-                                <ArrowUpRight size={24} />
-                            </Link>
-                        </div>
-                    </div>
                 </div>
             </section>
+
+            {/* Room Carousal Section */}
+            <div className=" p-8 md:pb-18">
+                <RoomCarousal
+                    rooms={[
+                        {
+                            image: StandardRoomImage,
+                            title: t("stay.standardRoom"),
+                            description: t("stay.standardRoomDesc"),
+                            price: t("stay.standardRoomInfo"),
+                            meal: t("stay.meals"),
+                            alt: "Standard Room",
+                            link: `/${locale}/standard-room`,
+                        },
+                        {
+                            image: DeluxeRoomImage,
+                            title: t("stay.deluxeRoom"),
+                            description: t("stay.deluxeRoomDesc"),
+                            price: t("stay.deluxeRoomInfo"),
+                            meal: t("stay.meals"),
+                            alt: "Deluxe Room",
+                            link: `/${locale}/super-deluxe-room`,
+                        },
+                    ]}
+                />
+            </div>
+
         </div>
     );
 }   

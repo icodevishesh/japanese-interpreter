@@ -6,13 +6,13 @@ import {
     MapPin
 } from "lucide-react";
 
-export function Footer() {
+export function Footer({ locale }: { locale: string }) {
     const t = useTranslations("footer");
 
     return (
         <footer className="text-white">
 
-            <div className="bg-[#1d231f] max-w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 py-12 px-6 md:px-12 lg:px-24">
+            <div className="bg-[#1d231f] max-w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 py-12 px-6 md:px-12 lg:px-24">
                 {/* Self Introduction section */}
                 <div className="flex flex-col gap-6">
                     <h4 className="text-lg font-bold tracking-tight text-white">{t("selfIntro.title")}</h4>
@@ -26,10 +26,11 @@ export function Footer() {
                     <h4 className="text-lg font-bold tracking-tight text-white">{t("page.title")}</h4>
                     <nav className="flex flex-col gap-3">
                         <Link href="https://www.japanese-interpreter.com/" target="_blank" className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.website")}</Link>
-                        <Link href="#about" className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.profile")}</Link>
-                        <Link href="#homestay" className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.homestay")}</Link>
-                        <Link href="#tours" className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.tours")}</Link>
-                        <Link href="#testimonials" className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.testimonials")}</Link>
+                        <Link href={`/${locale}/self-introduction`} className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.profile")}</Link>
+                        <Link href={`/${locale}/homestay`} className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.homestay")}</Link>
+                        <Link href={`/${locale}/Experiences`} className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.culturalExperiences")}</Link>
+                        <Link href={`/${locale}/optional-tour`} className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.tours")}</Link>
+                        <Link href={`/${locale}/customer-testimonials`} className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.testimonials")}</Link>
                     </nav>
                 </div>
 
@@ -69,6 +70,23 @@ export function Footer() {
                         </div>
                     </div>
                 </div>
+
+                {/* Address */}
+            <div className="flex flex-col gap-6">
+                <h4 className="text-lg font-bold tracking-tight text-white">
+                    {t("address.value")}</h4>
+                <a
+                    href="https://maps.app.goo.gl/iFwMNLJQJaWp6xXF7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 text-sm leading-relaxed max-w-xs hover:underline transition-colors cursor-pointer"
+                >
+                    {t("address.title")}
+                    <br />
+                    {t("address.address")}
+                </a>
+            </div>
+
             </div>
 
             {/* Bottom Bar */}
