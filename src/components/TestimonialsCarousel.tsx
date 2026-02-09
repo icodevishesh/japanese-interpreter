@@ -40,6 +40,8 @@ export default function TestimonialsCarousel() {
         setCurrentIndex((prev) => (prev - 1 + items.length) % items.length);
     };
 
+    const currentItem = items[currentIndex];
+
     return (
         <div className="flex flex-col lg:flex-row items-start gap-16 max-w-7xl mx-auto px-4">
             {/* Left Content */}
@@ -50,6 +52,9 @@ export default function TestimonialsCarousel() {
                 <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-[#1a1a1a] leading-tight tracking-tight mb-10">
                     {t("title")}
                 </h2>
+                <p className="text-gray-500 max-w-3xl text-sm md:text-md leading-relaxed text-justify md:text-left">
+                    {t("description")}
+                </p>
             </div>
 
             {/* Right Slideshow Area */}
@@ -95,13 +100,13 @@ export default function TestimonialsCarousel() {
                                         {/* Stars */}
                                         <div className="flex gap-1 mb-6">
                                             {[1, 2, 3, 4, 5].map((s) => (
-                                                <Star key={s} size={20} className="fill-[#12aa91] text-[#12aa91]" />
+                                                <Star key={s} size={20} className="fill-[#FCD601] text-[#FCD601]" />
                                             ))}
                                         </div>
 
                                         {/* Testimonial Text */}
                                         <div className="flex-1 flex flex-col justify-center">
-                                            <p className="text-gray-600 text-lg md:text-xl leading-relaxed font-medium mb-8 md:pr-12 text-center md:text-left">
+                                            <p className="text-gray-600 text-sm md:text-xl leading-relaxed font-medium mb-8 md:pr-12 text-left">
                                                 {item.text}
                                             </p>
                                         </div>

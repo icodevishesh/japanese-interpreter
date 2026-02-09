@@ -54,27 +54,32 @@ export default function StandardRoomPage({
             title: t("experiences.card1.title"),
             desc: t("experiences.card1.desc"),
             image: AyurvedicMassageImage,
+            link: `/Experiences/ayurvedic-message`
         },
         {
             title: t("experiences.card2.title"),
             desc: t("experiences.card2.desc"),
             image: IndianCookingImage,
             rank: t("experiences.card2.rank"),
+            link: `/Experiences/indian-cuisine-experience`,
         },
         {
             title: t("experiences.card3.title"),
             desc: t("experiences.card3.desc"),
             image: HennaArtImage,
+            link: `/Experiences/henna-art-experiences`,
         },
         {
             title: t("experiences.card4.title"),
             desc: t("experiences.card4.desc"),
             image: YogaImage,
+            link: `/Experiences/yoga-experience`,
         },
         {
             title: t("experiences.card5.title"),
             desc: t("experiences.card5.desc"),
             image: SareeImage,
+            link: `/Experiences/traditional-saree-wearing-experience`,
         },
     ];
 
@@ -91,8 +96,8 @@ export default function StandardRoomPage({
                 </div>
 
                 {/* Photo Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-2 h-[400px] md:h-[600px] rounded-2xl overflow-hidden mb-8">
-                    <div className="md:col-span-2 md:row-span-2 relative">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 rounded-2xl overflow-hidden mb-8">
+                    <div className="col-span-2 row-span-2 relative aspect-[4/3] md:aspect-square">
                         <Image
                             src={heroImage}
                             alt="Hero Room"
@@ -101,16 +106,16 @@ export default function StandardRoomPage({
                             onClick={() => setSelectedImage(heroImage)}
                         />
                     </div>
-                    <div className="relative hidden md:block">
+                    <div className="relative aspect-square">
                         <Image
-                            src={bedroom}
-                            alt="Bedroom"
+                            src={washimage}
+                            alt="Wash"
                             fill
                             className="object-cover hover:brightness-90 transition-all cursor-pointer"
                             onClick={() => setSelectedImage(bedroom)}
                         />
                     </div>
-                    <div className="relative hidden md:block rounded-tr-2xl">
+                    <div className="relative aspect-square">
                         <Image
                             src={workplace}
                             alt="Living Room"
@@ -119,7 +124,7 @@ export default function StandardRoomPage({
                             onClick={() => setSelectedImage(workplace)}
                         />
                     </div>
-                    <div className="relative hidden md:block">
+                    <div className="relative aspect-square">
                         <Image
                             src={bathroom}
                             alt="Bathroom"
@@ -128,7 +133,7 @@ export default function StandardRoomPage({
                             onClick={() => setSelectedImage(bathroom)}
                         />
                     </div>
-                    <div className="relative hidden md:block rounded-br-2xl">
+                    <div className="relative aspect-square">
                         <Image
                             src={storage}
                             alt="View"
@@ -137,7 +142,7 @@ export default function StandardRoomPage({
                         />
                         <button 
                             onClick={() => setShowAllPhotos(true)}
-                            className="absolute bottom-4 right-4 text-black bg-white border border-gray-900 px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 hover:bg-gray-50 transition-colors"
+                            className="absolute bottom-2 right-2 text-black bg-white border border-gray-900 px-2 py-1 rounded text-xs font-semibold flex items-center gap-1 hover:bg-gray-50 transition-colors"
                         >
                             {t("DeluxeRoomSection.showAllPhotos")}
                         </button>
@@ -336,7 +341,7 @@ export default function StandardRoomPage({
                     <div className="relative max-w-6xl w-full max-h-[90vh] overflow-auto">
                         <button
                             onClick={() => setShowAllPhotos(false)}
-                            className="absolute top-4 right-4 z-10 bg-white rounded-full p-2 hover:bg-gray-100 transition-colors"
+                            className="absolute top-4 right-4 z-10 bg-grey-500 rounded-full p-2 hover:bg-gray-800 transition-colors"
                         >
                             <X className="w-6 h-6" />
                         </button>
@@ -349,14 +354,14 @@ export default function StandardRoomPage({
                                     className="object-cover rounded-lg"
                                 />
                             </div>
-                            <div className="relative aspect-video">
+                            {/* <div className="relative aspect-video">
                                 <Image
                                     src={bedroom}
                                     alt="Bedroom"
                                     fill
                                     className="object-cover rounded-lg"
                                 />
-                            </div>
+                            </div> */}
                             <div className="relative aspect-video">
                                 <Image
                                     src={workplace}

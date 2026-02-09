@@ -56,25 +56,31 @@ export default async function Homestay({
             <div className=" p-8 md:pb-18">
                 <RoomCarousal
                     rooms={[
-                        {
-                            image: StandardRoomImage,
-                            title: t("stay.standardRoom"),
-                            description: t("stay.standardRoomDesc"),
-                            price: t("stay.standardRoomInfo"),
-                            meal: t("stay.meals"),
-                            alt: "Standard Room",
-                            link: `/${locale}/standard-room`,
-                        },
-                        {
-                            image: DeluxeRoomImage,
-                            title: t("stay.deluxeRoom"),
-                            description: t("stay.deluxeRoomDesc"),
-                            price: t("stay.deluxeRoomInfo"),
-                            meal: t("stay.meals"),
-                            alt: "Deluxe Room",
-                            link: `/${locale}/super-deluxe-room`,
-                        },
-                    ]}
+                            {
+                                image: StandardRoomImage,
+                                title: t("stay.standardRoom"),
+                                description: t("stay.standardRoomDesc"),
+                                price: t("stay.standardRoomInfo"),
+                                info: t("stay.standardRoomInfo2"),
+                                info2: t("stay.standardRoomInfo3"),
+                                info3: t("stay.deluxeRoomInfo4"),
+                                meal: t("stay.meals"),
+                                alt: "Standard Room",
+                                link: `/standard-room`
+                            },
+                            {
+                                image: DeluxeRoomImage,
+                                title: t("stay.deluxeRoom"),
+                                description: t("stay.deluxeRoomDesc"),
+                                price: t("stay.deluxeRoomInfo"),
+                                info: t("stay.deluxeRoomInfo2"),
+                                info2: t("stay.deluxeRoomInfo3"),
+                                info3: t("stay.deluxeRoomInfo4"),
+                                meal: t("stay.meals"),
+                                alt: "Deluxe Room",
+                                link: `/super-deluxe-room`
+                            },
+                        ]}
                 />
             </div>
 

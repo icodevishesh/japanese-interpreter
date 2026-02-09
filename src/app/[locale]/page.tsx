@@ -2,7 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 import { Navbar } from "../../components/Navbar";
 import YouTubePlayer from "@/src/components/YouTubePlayer";
-import { BadgeCheck } from "lucide-react";
+import { Asterisk, BadgeCheck } from "lucide-react";
 import Link from "next/link";
 
 import StoryImage from "@/src/assets/self-intro-img1.jpg";
@@ -23,6 +23,7 @@ import ExperiencesCarousel from "@/src/components/ExperiencesCarousel";
 import TestimonialsCarousel from "@/src/components/TestimonialsCarousel";
 import ContactForm from "@/src/components/ContactForm";
 import RoomCarousel from "@/src/components/RoomCarousel";
+import { link } from "fs";
 
 export default async function Home({
     params
@@ -38,31 +39,33 @@ export default async function Home({
             title: t("experiences.card1.title"),
             desc: t("experiences.card1.desc"),
             image: AyurvedicMassageImage,
-            link: `/${locale}/Experiences/ayurvedic-message`
+            link: `${locale}/Experiences/ayurvedic-message`
         },
         {
             title: t("experiences.card2.title"),
             desc: t("experiences.card2.desc"),
             image: IndianCookingImage,
-            link: `/${locale}/Experiences/indian-cuisine-experience`
+            link: `${locale}/Experiences/indian-cuisine-experience`,
+            rank: t("experiences.card2.rank"),
         },
         {
             title: t("experiences.card3.title"),
             desc: t("experiences.card3.desc"),
+            link: `${locale}/Experiences/henna-art-experiences`,
             image: HennaArtImage,
-            link: `/${locale}/Experiences/henna-art-experiences`
         },
         {
             title: t("experiences.card4.title"),
             desc: t("experiences.card4.desc"),
+            link: `${locale}/Experiences/yoga-experience`,
             image: YogaImage,
-            link: `/${locale}/Experiences/yoga-experience`
         },
         {
             title: t("experiences.card5.title"),
             desc: t("experiences.card5.desc"),
+            link: `${locale}/Experiences/traditional-saree-wearing-experience`,
             image: SareeImage,
-            link: `/${locale}/Experiences/traditional-saree-wearing-experience`
+            rank: t("experiences.card5.rank"),
         },
     ];
 
@@ -88,11 +91,23 @@ export default async function Home({
                         title="Indian Tour HomeStay"
                         className="rounded-xl ring-2 ring-gray-300 shadow-2xl"
                     />
+                    <p className="text-gray-500 text-sm md:text-md leading-relaxed text-center mt-6">
+                        {t("ytVideo.description")}
+                    </p>
                 </div>
+
             </section>
 
             {/* Self Introduction section */}
             <section id="about" className="w-full relative overflow-hidden bg-white py-12 md:py-20 px-4 md:px-12">
+                <div className="flex flex-col items-center text-center mb-12">
+                    <span className="bg-[#f0f9f8] text-[#12aa91] px-4 py-1.5 rounded-lg text-sm font-semibold tracking-wide flex items-center gap-2">
+                        {t("selfIntro.badge")}
+                    </span>
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-[#1a1a1a] my-6 tracking-tight">
+                        {t("selfIntro.title")}
+                    </h2>
+                </div>
                 <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
                     {/* Left: Images */}
                     <div className="relative order-2 lg:order-1 mt-10 lg:mt-0">
@@ -109,6 +124,8 @@ export default async function Home({
                                 width={800}
                                 height={600}
                                 className="w-full h-auto object-cover"
+                                priority
+                                sizes="(max-width: 1024px) 100vw, 50vw"
                             />
                         </div>
 
@@ -120,24 +137,21 @@ export default async function Home({
                                 width={400}
                                 height={300}
                                 className="w-full h-auto object-cover"
+                                sizes="(max-width: 1024px) 50vw, 25vw"
                             />
                         </div>
                     </div>
 
                     {/* Right: Content */}
                     <div className="flex flex-col items-center lg:items-start order-1 lg:order-2">
-                        <span className="bg-[#f0f9f8] text-[#12aa91] px-4 py-1.5 rounded-lg text-sm font-semibold tracking-wide flex items-center gap-2">
-                            {t("selfIntro.badge")}
-                        </span>
-
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#1a1a1a] mt-6 mb-6 tracking-tight">
-                            {t("selfIntro.title")}
-                        </h2>
+                        <h3 className="text-xl md:text-2xl font-bold text-[#1a1a1a] mb-2 tracking-tight">
+                            {t("selfIntro.name")}
+                        </h3>
                         <p className="text-gray-500 max-w-3xl text-sm md:text-md leading-relaxed text-justify md:text-left mb-4">
                             {t("selfIntro.subtitle")}
                         </p>
 
-                        <span className="text-md text-black font-extrabold tracking-wide mb-6 flex items-center uppercase">
+                        <span className="text-sm md:text-md text-black font-extrabold tracking-wide mb-6 flex items-center uppercase">
                             *{t("selfIntro.experience")}
                         </span>
 
@@ -158,7 +172,7 @@ export default async function Home({
             </section>
 
             {/* Stay section */}
-            <section id="homestay" className="w-full bg-white py-12 md:py-24 px-4 md:px-12 relative overflow-hidden">
+            <section id="homestay" className="w-full bg-[#f9fafb] py-12 md:py-24 px-4 md:px-12 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto relative z-10">
 
                     {/* Section Header */}
@@ -173,9 +187,9 @@ export default async function Home({
                             {[1, 2, 3].map((i) => (
                                 <li key={i} className="flex items-center gap-3 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                                     <div className="shrink-0 w-10 h-10 bg-[#f0f9f8] rounded-full flex items-center justify-center">
-                                        <BadgeCheck className="text-[#12aa91] h-6 w-6" />
+                                        <span className="text-[#12aa91] text-2xl font-extrabold">※</span>
                                     </div>
-                                    <p className="text-sm md:text-base text-gray-600 font-medium">
+                                    <p className="text-sm md:text-base text-gray-600 font-medium text-start">
                                         {t(`stay.description.${i}`)}
                                     </p>
                                 </li>
@@ -191,18 +205,24 @@ export default async function Home({
                                 title: t("stay.standardRoom"),
                                 description: t("stay.standardRoomDesc"),
                                 price: t("stay.standardRoomInfo"),
+                                info: t("stay.standardRoomInfo2"),
+                                info2: t("stay.standardRoomInfo3"),
+                                info3: t("stay.deluxeRoomInfo4"),
                                 meal: t("stay.meals"),
                                 alt: "Standard Room",
-                                link: `/${locale}/standard-room`,
+                                link: `${locale}/standard-room`
                             },
                             {
                                 image: DeluxeRoomImage,
                                 title: t("stay.deluxeRoom"),
                                 description: t("stay.deluxeRoomDesc"),
                                 price: t("stay.deluxeRoomInfo"),
+                                info: t("stay.deluxeRoomInfo2"),
+                                info2: t("stay.deluxeRoomInfo3"),
+                                info3: t("stay.deluxeRoomInfo4"),
                                 meal: t("stay.meals"),
                                 alt: "Deluxe Room",
-                                link: `/${locale}/super-deluxe-room`,
+                                link: `${locale}/super-deluxe-room`
                             },
                         ]}
                     />
@@ -234,28 +254,32 @@ export default async function Home({
 
             {/* Tourism section */}
             <section id="tours" className="w-full bg-[#f9fafb] py-12 md:py-24 px-4 md:px-12 relative overflow-hidden">
-                <div className="max-w-7xl mx-auto text-center mb-16">
-                    <span className="bg-[#e6f6f4] text-[#12aa91] px-4 py-2 rounded-lg text-sm font-bold mb-8 inline-block">
+                <div className="flex flex-col max-w-7xl mx-auto text-center items-center mb-16">
+                    <span className="bg-[#e6f6f4] text-[#12aa91] px-4 py-2 rounded-lg text-sm font-bold mb-6 inline-block">
                         {t("tourism.badge")}
                     </span>
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1a1a1a] max-w-5xl mx-auto leading-tight tracking-tight mt-6">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1a1a1a] max-w-5xl mx-auto leading-tight tracking-tight mb-6">
                         {t("tourism.title")}
                     </h2>
+                    <p className="text-gray-500 max-w-3xl text-sm md:text-md leading-relaxed text-justify md:text-center">
+                        {t("tourism.description")}
+                    </p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
                     {[
-                        { title: t("tourism.north"), img: NorthIndiaImage },
-                        { title: t("tourism.south"), img: SouthIndiaImage },
-                        { title: t("tourism.east"), img: EastIndiaImage },
-                        { title: t("tourism.west"), img: WestIndiaImage },
+                        { title: t("tourism.north"), img: NorthIndiaImage, href: `${locale}/optional-tour/north` },
+                        { title: t("tourism.south"), img: SouthIndiaImage, href: `${locale}/optional-tour/south` },
+                        { title: t("tourism.east"), img: EastIndiaImage, href: `${locale}/optional-tour/east` },
+                        { title: t("tourism.west"), img: WestIndiaImage, href: `${locale}/optional-tour/west` },
                     ].map((region, idx) => (
-                        <div key={idx} className="group relative aspect-3/2 rounded-xl overflow-hidden shadow-xl">
+                        <Link key={idx} href={region.href} className="group relative aspect-3/2 rounded-xl overflow-hidden shadow-xl block hover:scale-105 transition-transform duration-300">
                             <Image
                                 src={region.img}
                                 alt={region.title}
                                 fill
                                 className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
                             {/* Overlay with title matching design */}
                             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent flex items-end justify-start p-6">
@@ -263,8 +287,19 @@ export default async function Home({
                                     {region.title}
                                 </h3>
                             </div>
-                        </div>
+                        </Link>
                     ))}
+                </div>
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-4 mt-12">
+                    <p className="text-gray-500 max-w-3xl text-sm md:text-lg text-justify md:text-center">
+                        {t("tourism.info")}
+                    </p>
+                    <Link
+                        href= "/inquiry"
+                        className="px-4 py-2 bg-[#12aa91] text-white rounded-lg font-semibold hover:bg-[#109882] transition-colors shadow-lg"
+                    >
+                        {t("tourism.button")}
+                    </Link>
                 </div>
             </section>
 

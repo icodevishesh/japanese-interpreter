@@ -82,8 +82,6 @@ export function Footer({ locale }: { locale: string }) {
                     className="text-gray-400 text-sm leading-relaxed max-w-xs hover:underline transition-colors cursor-pointer"
                 >
                     {t("address.title")}
-                    <br />
-                    {t("address.address")}
                 </a>
             </div>
 

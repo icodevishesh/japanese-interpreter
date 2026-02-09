@@ -7,7 +7,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 interface City {
     name: string;
     loc: string;
-    images: string[];
+    images: (string | any)[];
 }
 
 interface TravelLocationGridProps {

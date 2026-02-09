@@ -61,7 +61,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
                         {/* Close Button */}
                         <button
                             onClick={() => setSelectedImage(null)}
-                            className="absolute top-4 right-4 z-10 text-white hover:text-[#0f8b73] transition-colors"
+                            className="absolute top-4 right-4 z-10 text-gray-500 hover:text-[#0f8b73] transition-colors"
                         >
                             <X className="w-8 h-8" />
                         </button>

@@ -54,27 +54,32 @@ export default function StandardRoomPage({
             title: t("experiences.card1.title"),
             desc: t("experiences.card1.desc"),
             image: AyurvedicMassageImage,
+            link: `/Experiences/ayurvedic-message`
         },
         {
             title: t("experiences.card2.title"),
             desc: t("experiences.card2.desc"),
             image: IndianCookingImage,
             rank: t("experiences.card2.rank"),
+            link: `/Experiences/indian-cuisine-experience`,
         },
         {
             title: t("experiences.card3.title"),
             desc: t("experiences.card3.desc"),
             image: HennaArtImage,
+            link: `/Experiences/henna-art-experiences`,
         },
         {
             title: t("experiences.card4.title"),
             desc: t("experiences.card4.desc"),
             image: YogaImage,
+            link: `/Experiences/yoga-experience`,
         },
         {
             title: t("experiences.card5.title"),
             desc: t("experiences.card5.desc"),
             image: SareeImage,
+            link: `/Experiences/traditional-saree-wearing-experience`,
         },
     ];
 
@@ -92,8 +97,8 @@ export default function StandardRoomPage({
                 </div>
 
                 {/* Photo Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-2 h-[400px] md:h-[600px] rounded-2xl overflow-hidden mb-8">
-                    <div className="md:col-span-2 md:row-span-2 relative">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 rounded-2xl overflow-hidden mb-8">
+                    <div className="col-span-2 row-span-2 relative aspect-[4/3] md:aspect-auto md:col-span-2 md:row-span-2">
                         <Image
                             src={heroImage}
                             alt="Hero Room"
@@ -102,7 +107,7 @@ export default function StandardRoomPage({
                             onClick={() => setSelectedImage(heroImage)}
                         />
                     </div>
-                    <div className="relative hidden md:block">
+                    <div className="relative aspect-square">
                         <Image
                             src={bedroom}
                             alt="Bedroom"
@@ -111,7 +116,7 @@ export default function StandardRoomPage({
                             onClick={() => setSelectedImage(bedroom)}
                         />
                     </div>
-                    <div className="relative hidden md:block rounded-tr-2xl">
+                    <div className="relative aspect-square">
                         <Image
                             src={workplace}
                             alt="Living Room"
@@ -120,7 +125,7 @@ export default function StandardRoomPage({
                             onClick={() => setSelectedImage(workplace)}
                         />
                     </div>
-                    <div className="relative hidden md:block">
+                    <div className="relative aspect-square">
                         <Image
                             src={bathroom}
                             alt="Bathroom"
@@ -129,7 +134,7 @@ export default function StandardRoomPage({
                             onClick={() => setSelectedImage(bathroom)}
                         />
                     </div>
-                    <div className="relative hidden md:block rounded-br-2xl">
+                    <div className="relative aspect-square">
                         <Image
                             src={storage}
                             alt="View"
@@ -138,7 +143,7 @@ export default function StandardRoomPage({
                         />
                         <button 
                             onClick={() => setShowAllPhotos(true)}
-                            className="absolute bottom-4 right-4 text-black bg-white border border-gray-900 px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 hover:bg-gray-50 transition-colors"
+                            className="absolute bottom-2 right-2 text-black bg-white border border-gray-900 px-2 py-1 rounded text-xs font-semibold flex items-center gap-1 hover:bg-gray-50 transition-colors md:bottom-4 md:right-4 md:px-4 md:py-2 md:text-sm"
                         >
                             {t("standardRoomSection.showAllPhotos")}
                         </button>
@@ -335,15 +340,15 @@ export default function StandardRoomPage({
 
         {/* Photo Gallery Modal */}
         {showAllPhotos && (
-            <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4">
-                <div className="relative max-w-6xl w-full max-h-[90vh] overflow-auto">
+            <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-2 sm:p-4">
+                <div className="relative w-full h-full max-w-6xl max-h-[90vh] overflow-auto">
                     <button
                         onClick={() => setShowAllPhotos(false)}
-                        className="absolute top-4 right-4 z-10 bg-white rounded-full p-2 hover:bg-gray-100 transition-colors"
+                        className="absolute top-2 right-2 sm:top-4 sm:right-4 z-10 bg-gray-500 rounded-full p-2 sm:p-3 hover:bg-gray-800 transition-colors"
                     >
-                        <X className="w-6 h-6" />
+                        <X className="w-5 h-5 sm:w-6 sm:h-6" />
                     </button>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 p-2 sm:p-4">
                         <div className="relative aspect-video">
                             <Image
                                 src={heroImage}
@@ -399,15 +404,15 @@ export default function StandardRoomPage({
 
             {/* Fullscreen Image Modal */}
             {selectedImage && (
-                <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4">
-                    <div className="relative max-w-7xl w-full max-h-[90vh] flex items-center justify-center">
+                <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-2 sm:p-4">
+                    <div className="relative w-full h-full max-w-7xl max-h-[90vh] flex items-center justify-center">
                         <button
                             onClick={() => setSelectedImage(null)}
-                            className="absolute top-4 right-4 z-10 bg-white rounded-full p-2 hover:bg-gray-100 transition-colors"
+                            className="absolute top-2 right-2 sm:top-4 sm:right-4 z-10 bg-gray-500 rounded-full p-2 sm:p-3 hover:bg-gray-800 transition-colors"
                         >
-                            <X className="w-6 h-6" />
+                            <X className="w-5 h-5 sm:w-6 sm:h-6" />
                         </button>
-                        <div className="relative w-full h-[80vh] flex items-center justify-center">
+                        <div className="relative w-full h-[70vh] sm:h-[80vh] flex items-center justify-center">
                             <Image
                                 src={selectedImage}
                                 alt="Fullscreen Image"

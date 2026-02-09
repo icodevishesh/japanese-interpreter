@@ -25,26 +25,26 @@ export default function ExperienceCard({ title, image, index }: ExperienceCardPr
     
     // Redirect to specific experience section based on index
     if (index === 1) {
-      // Sari wrapping - use router.push for proper navigation
-      router.push(`/${locale}/Experiences/traditional-saree-wearing-experience`);
+      // Sari wrapping - use window.location.href for full page redirect
+      window.location.href = `/${locale}/Experiences/traditional-saree-wearing-experience`;
     } else if (index === 2) {
-      // Henna art - scroll to experiences section
-      router.push(`/${locale}/Experiences/henna-art-experiences`);
+      // Henna art - use window.location.href for full page redirect
+      window.location.href = `/${locale}/Experiences/henna-art-experiences`;
     } else if (index === 3) {
-      // Shirodhara - scroll to experiences section
-      router.push(`/${locale}/Experiences/ayurvedic-message`);
+      // Shirodhara - use window.location.href for full page redirect
+      window.location.href = `/${locale}/Experiences/ayurvedic-message`;
     } else if (index === 4) {
-      // Palmistry - use router.push for proper navigation
-      router.push(`/${locale}/Experiences/palm-reading`);
+      // Palmistry - use window.location.href for full page redirect
+      window.location.href = `/${locale}/Experiences/palm-reading`;
     } else if (index === 5) {
-      // Yoga - use router.push for proper navigation
-      router.push(`/${locale}/Experiences/yoga-experience`);
+      // Yoga - use window.location.href for full page redirect
+      window.location.href = `/${locale}/Experiences/yoga-experience`;
     } else if (index === 0) {
-      // Indian Cuisine - scroll to experiences section
-      router.push(`/${locale}/Experiences/indian-cuisine-experience`);
+      // Indian Cuisine - use window.location.href for full page redirect
+      window.location.href = `/${locale}/Experiences/indian-cuisine-experience`;
     } else {
-      // Other experiences - scroll to experiences section
-      router.push(`/${locale}#experiences`);
+      // Other experiences - use window.location.href for full page redirect
+      window.location.href = `/${locale}#experiences`;
     }
   };
 

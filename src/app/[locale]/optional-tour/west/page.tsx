@@ -1,6 +1,32 @@
 import { Navbar } from "@/src/components/Navbar";
 import TravelLocationGrid from "@/src/components/TravelLocationGrid";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import Image from "next/image";
+
+import MumbaiImage from "@/src/assets/tour/west/mumbai/1.png";
+import MumbaiImage2 from "@/src/assets/tour/west/mumbai/2.png";
+import MumbaiImage3 from "@/src/assets/tour/west/mumbai/3.png";
+import PuneImage1 from "@/src/assets/tour/west/pune/1.png";
+import PuneImage2 from "@/src/assets/tour/west/pune/2.png";
+import PuneImage3 from "@/src/assets/tour/west/pune/3.png";
+import AurangabadImage1 from "@/src/assets/tour/west/aurangabad/1.png";
+import AurangabadImage2 from "@/src/assets/tour/west/aurangabad/2.png";
+import AurangabadImage3 from "@/src/assets/tour/west/aurangabad/3.png";
+import AhmedabadImage1 from "@/src/assets/tour/west/ahmedabad/1.png";
+import AhmedabadImage2 from "@/src/assets/tour/west/ahmedabad/2.png";
+import AhmedabadImage3 from "@/src/assets/tour/west/ahmedabad/3.png";
+import GoaImage1 from "@/src/assets/tour/west/goa/1.png";
+import GoaImage2 from "@/src/assets/tour/west/goa/2.png";
+import GoaImage3 from "@/src/assets/tour/west/goa/3.png";
+import RaanImage1 from "@/src/assets/tour/west/raan-of-kutch/1.png";
+import RaanImage2 from "@/src/assets/tour/west/raan-of-kutch/2.png";
+import RaanImage3 from "@/src/assets/tour/west/raan-of-kutch/3.png";
+import GirImage1 from "@/src/assets/tour/west/gir-national-park/1.png";
+import GirImage2 from "@/src/assets/tour/west/gir-national-park/2.png";
+import GirImage3 from "@/src/assets/tour/west/gir-national-park/3.png";
+import RajasthanImage1 from "@/src/assets/tour/west/rajasthan/1.png";
+import RajasthanImage2 from "@/src/assets/tour/west/rajasthan/2.png";
+import RajasthanImage3 from "@/src/assets/tour/west/rajasthan/3.png";
 
 export default async function West({
     params
@@ -13,23 +39,46 @@ export default async function West({
 
     const westCitiesArray = t.raw('tourism.westCities.cities') as Array<{ name: string; loc: string }>;
 
-    const cityImageMap: Record<number, string[]> = {
-        0: [ // Delhi
+    const cityImageMap: Record<number, any[]> = {
+        0: [ // Mumbai
+            MumbaiImage,
+            MumbaiImage2,
+            MumbaiImage3
         ],
-        1: [ // Jaipur
+        1: [ // Pune
+            PuneImage1,
+            PuneImage2,
+            PuneImage3
         ],
-        2: [ // Agra
+        2: [ // Aurangabad
+            AurangabadImage1,
+            AurangabadImage2,
+            AurangabadImage3
         ],
-        3: [ // Varanasi
+        3: [ // Ahmedabad
+            AhmedabadImage1,
+            AhmedabadImage2,
+            AhmedabadImage3
         ],
-        4: [ // Haridwar
+        4: [ // Goa
+            GoaImage1,
+            GoaImage2,
+            GoaImage3
         ],
-        5: [ // Rishikesh
+        5: [ // Raan of Kutch
+            RaanImage1,
+            RaanImage2,
+            RaanImage3
         ],
-        6: [ // Amritsar
+        6: [ // Gir National Park
+            GirImage1,
+            GirImage2,
+            GirImage3
         ],
-        7: [ // Shimla/Manali
-
+        7: [ // Rajasthan
+            RajasthanImage1,
+            RajasthanImage2,
+            RajasthanImage3
         ]
     };
 
