@@ -1,7 +1,5 @@
 import { Navbar } from "@/src/components/Navbar";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import StandardRoomImage from "@/src/assets/standardroom.jpg";
-import DeluxeRoomImage from "@/src/assets/deeluxrrom1.jpeg";
 import RoomCarousal from "@/src/components/RoomCarousel";
 
 export default async function Homestay({
@@ -57,7 +55,7 @@ export default async function Homestay({
                 <RoomCarousal
                     rooms={[
                             {
-                                image: StandardRoomImage,
+                                image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7728-scaled-1.jpg",
                                 title: t("stay.standardRoom"),
                                 description: t("stay.standardRoomDesc"),
                                 price: t("stay.standardRoomInfo"),
@@ -69,7 +67,7 @@ export default async function Homestay({
                                 link: `/standard-room`
                             },
                             {
-                                image: DeluxeRoomImage,
+                                image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/deeluxrrom1-scaled-1.jpeg",
                                 title: t("stay.deluxeRoom"),
                                 description: t("stay.deluxeRoomDesc"),
                                 price: t("stay.deluxeRoomInfo"),

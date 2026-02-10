@@ -1,35 +1,6 @@
 import { Navbar } from "@/src/components/Navbar";
 import TravelLocationGrid from "@/src/components/TravelLocationGrid";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import Image from "next/image";
-
-import BangaloreImage1 from "@/src/assets/tour/south/bangalore/1.png";
-import BangaloreImage2 from "@/src/assets/tour/south/bangalore/2.png";
-import BangaloreImage3 from "@/src/assets/tour/south/bangalore/3.png";
-import BangaloreImage4 from "@/src/assets/tour/south/bangalore/4.png";
-import ChennaiImage1 from "@/src/assets/tour/south/chennai/1.png";
-import ChennaiImage2 from "@/src/assets/tour/south/chennai/2.png";
-import ChennaiImage3 from "@/src/assets/tour/south/chennai/3.png";
-import GoaImage1 from "@/src/assets/tour/south/goa/1.png";
-import GoaImage2 from "@/src/assets/tour/south/goa/2.png";
-import GoaImage3 from "@/src/assets/tour/south/goa/3.png";
-import GoaImage4 from "@/src/assets/tour/south/goa/4.png";
-import HampiImage1 from "@/src/assets/tour/south/hampi/1.png";
-import HampiImage2 from "@/src/assets/tour/south/hampi/2.png";
-import HampiImage3 from "@/src/assets/tour/south/hampi/3.png";
-import HampiImage4 from "@/src/assets/tour/south/hampi/4.png";
-import KeralaImage1 from "@/src/assets/tour/south/kerala/1.png";
-import KeralaImage2 from "@/src/assets/tour/south/kerala/2.png";
-import KeralaImage3 from "@/src/assets/tour/south/kerala/3.png";
-import MaduraiImage1 from "@/src/assets/tour/south/madurai/1.png";
-import MaduraiImage2 from "@/src/assets/tour/south/madurai/2.png";
-import MaduraiImage3 from "@/src/assets/tour/south/madurai/3.png";
-import MysoreImage1 from "@/src/assets/tour/south/mysore/1.png";
-import MysoreImage2 from "@/src/assets/tour/south/mysore/2.png";
-import MysoreImage3 from "@/src/assets/tour/south/mysore/3.png";
-import RameshwaramImage1 from "@/src/assets/tour/south/rameshwaram/1.png";
-import RameshwaramImage2 from "@/src/assets/tour/south/rameshwaram/2.png";
-import RameshwaramImage3 from "@/src/assets/tour/south/rameshwaram/3.png";
 
 export default async function South({
     params
@@ -44,47 +15,47 @@ export default async function South({
 
     const cityImageMap: Record<number, any[]> = {
         0: [ // Chennai
-            ChennaiImage1,
-            ChennaiImage2,
-            ChennaiImage3
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/chennai/1.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/chennai/2.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/chennai/3.png"
         ], 
         1: [ // Madurai
-            MaduraiImage1,
-            MaduraiImage2,
-            MaduraiImage3
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/madurai/1.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/madurai/2.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/madurai/3.png"
         ],
         2: [// Bangalore
-            BangaloreImage1,
-            BangaloreImage2,
-            BangaloreImage3,
-            BangaloreImage4
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/bangalore/1.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/bangalore/2.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/bangalore/3.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/bangalore/4.png"
         ],
         3: [  // Mysore
-            MysoreImage1,
-            MysoreImage2,
-            MysoreImage3
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/mysore/1.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/mysore/2.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/mysore/3.png"
         ],
         4: [ // Hampi
-            HampiImage1,
-            HampiImage2,
-            HampiImage3,
-            HampiImage4
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/hampi/1.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/hampi/2.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/hampi/3.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/hampi/4.png"
         ],
         5: [  // goa
-            GoaImage1,
-            GoaImage2,
-            GoaImage3,
-            GoaImage4
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/goa/1.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/goa/2.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/goa/3.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/goa/4.png"
         ],
         6: [  // kerala
-            KeralaImage1,
-            KeralaImage2,
-            KeralaImage3
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/kerala/1.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/kerala/2.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/kerala/3.png"
         ],
         7: [ // Rameshwaram
-            RameshwaramImage1,
-            RameshwaramImage2,
-            RameshwaramImage3
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/rameshwaram/1.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/rameshwaram/2.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/south/rameshwaram/3.png"
         ]
     };
 

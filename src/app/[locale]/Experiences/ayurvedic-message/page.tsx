@@ -1,6 +1,5 @@
 import { Navbar } from "@/src/components/Navbar";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import AyurvedicMassageImage from "@/src/assets/massage.jpg";
 
 
 export default async function Shirodhara({
@@ -50,7 +49,7 @@ export default async function Shirodhara({
                             {/* Left side - Image */}
                             <div className="relative h-64 lg:h-auto flex items-center justify-center bg-white">
                                 <img
-                                    src={AyurvedicMassageImage.src}
+                                    src="https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/massage.jpg"
                                     alt="Ayurvedic Massage Shirodhara Experience"
                                     className="max-w-full max-h-full object-contain border-2 border-[#12aa91] rounded-lg"
                                 />

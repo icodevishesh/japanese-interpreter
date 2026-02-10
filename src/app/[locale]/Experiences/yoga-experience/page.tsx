@@ -1,7 +1,5 @@
 import { Navbar } from "@/src/components/Navbar";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import YogaImage from "@/src/assets/yoga.jpg";
-
 
 export default async function Yoga({
     params
@@ -50,7 +48,7 @@ export default async function Yoga({
                             {/* Left side - Image */}
                             <div className="relative h-64 lg:h-auto flex items-center justify-center bg-white">
                                 <img
-                                    src={YogaImage.src}
+                                    src="https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/yoga.jpg"
                                     alt="Yoga Experience"
                                     className="max-w-full max-h-full object-contain border-2 border-[#12aa91] rounded-lg"
                                 />

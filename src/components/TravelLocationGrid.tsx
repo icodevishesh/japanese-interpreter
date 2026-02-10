@@ -51,6 +51,7 @@ const CityCard = ({ city }: { city: City }) => {
                         className="object-cover transform group-hover:scale-110 transition-transform duration-700"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                         priority={index === 0}
+                        unoptimized
                     />
                 </div>
             ))}

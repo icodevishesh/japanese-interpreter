@@ -1,6 +1,5 @@
 import { Navbar } from "@/src/components/Navbar";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import IndianCuisineImage from "@/src/assets/IndianCuisine.png";
 
 
 export default async function IndianCuisine({
@@ -50,7 +49,7 @@ export default async function IndianCuisine({
                             {/* Left side - Image */}
                             <div className="relative h-64 lg:h-auto flex items-center justify-center bg-white">
                                 <img
-                                    src={IndianCuisineImage.src}
+                                    src="https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/indiancuisine.png"
                                     alt="Palmistry Experience"
                                     className="max-w-full max-h-full object-contain bg-white border-2 border-[#12aa91] rounded-lg"
                                 />

@@ -18,17 +18,17 @@ export default function TestimonialsCarousel() {
         {
             name: t("items.0.name"),
             text: t("items.0.text"),
-            image: ReikoImage, // Reiko
+            image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/WhatsApp-Image-2023-09-09-at-6.26.19-PM-150x150-1.jpeg", // Reiko
         },
         {
             name: t("items.1.name"),
             text: t("items.1.text"),
-            image: KazuyoImage, // Kazuyo
+            image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/WhatsApp-Image-2023-10-07-at-3.28.02-PM-e1696676583433-150x150-1.jpeg", // Kazuyo
         },
         {
             name: t("items.2.name"),
             text: t("items.2.text"),
-            image: NorikoImage, // Noriko
+            image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/WhatsApp-Image-2023-09-09-at-1.50.11-PM-1-150x150-1.jpeg", // Noriko
         },
     ];
 

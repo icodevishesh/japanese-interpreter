@@ -99,6 +99,7 @@ export default function ExperiencesCarousel({ items, autoplayInterval = 5000 }: 
                                         alt={item.title}
                                         fill
                                         className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                        unoptimized
                                     />
 
                                     {item.rank && (

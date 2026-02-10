@@ -1,11 +1,6 @@
 import { Navbar } from "@/src/components/Navbar";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
-import NorthIndiaImage from "@/src/assets/north-india.jpg";
-import SouthIndiaImage from "@/src/assets/south-india.png";
-import EastIndiaImage from "@/src/assets/east-india.jpg";
-import WestIndiaImage from "@/src/assets/west-india.jpg";
-
 
 
 
@@ -60,10 +55,10 @@ export default async function OptionalTour({
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
                     {[
-                        { title: t("tourism.north"), img: NorthIndiaImage, href: "/optional-tour/north" },
-                        { title: t("tourism.south"), img: SouthIndiaImage, href: "/optional-tour/south" },
-                        { title: t("tourism.east"), img: EastIndiaImage, href: "/optional-tour/east" },
-                        { title: t("tourism.west"), img: WestIndiaImage, href: "/optional-tour/west" },
+                        { title: t("tourism.north"), img: "https://www.japanese-interpreter.com/wp-content/uploads/2025/02/steptodown.com409460-1.jpg", href: `${locale}/optional-tour/north` },
+                        { title: t("tourism.south"), img: "https://www.japanese-interpreter.com/wp-content/uploads/2025/02/Best-Places-to-Visit-in-South-India-This-December.png", href: `${locale}/optional-tour/south` },
+                        { title: t("tourism.east"), img: "https://www.japanese-interpreter.com/wp-content/uploads/2025/02/02-04-2024-08-12North-East-of-India.jpg", href: `${locale}/optional-tour/east` },
+                        { title: t("tourism.west"), img: "https://www.japanese-interpreter.com/wp-content/uploads/2025/02/Blog-2-10.jpg", href: `${locale}/optional-tour/west` },
                     ].map((region, idx) => (
                         <div key={idx} className="group relative aspect-3/2 rounded-xl overflow-hidden shadow-xl">
                             <Image

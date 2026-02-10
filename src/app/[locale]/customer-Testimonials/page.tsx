@@ -2,9 +2,6 @@ import { Navbar } from "@/src/components/Navbar";
 import { Import } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
-import ReikoImage from "@/src/assets/reiko.jpeg";
-import KazuyoImage from "@/src/assets/kazuyo.jpeg";
-import NorikoImage from "@/src/assets/noriko.jpeg";
 
 export default async function CustomerTestimonials({
     params
@@ -20,9 +17,9 @@ export default async function CustomerTestimonials({
 
     // Map testimonial names to their images
     const testimonialImages: { [key: string]: any } = {
-        "Reiko": ReikoImage,
-        "Kazuyo": KazuyoImage,
-        "Noriko": NorikoImage,
+        "Reiko": "https://www.japanese-interpreter.com/wp-content/uploads/images/customer-testimonials/reiko.jpeg",
+        "Kazuyo": "https://www.japanese-interpreter.com/wp-content/uploads/images/customer-testimonials/kazuyo.jpeg",
+        "Noriko": "https://www.japanese-interpreter.com/wp-content/uploads/images/customer-testimonials/noriko.jpeg",
         "Rina": "",
         "Akemi": "",
         "Madoka": "",
@@ -85,11 +82,12 @@ export default async function CustomerTestimonials({
                                 {/* Profile Image */}
                                 {testimonialImages[item.id] ? (
                                     <Image
-                                        src={testimonialImages[item.id]}
+                                        src={testimonialImages[item.id]?.trimEnd()}
                                         alt={item.name}
                                         width={56}
                                         height={56}
                                         className="w-18 h-18 object-cover"
+                                        unoptimized
                                     />
                                 ) : (
                                     <div className="w-18 h-18 bg-[#12aa91] flex items-center justify-center">

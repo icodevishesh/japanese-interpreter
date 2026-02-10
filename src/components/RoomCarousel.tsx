@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 interface RoomItem {
-    image: StaticImageData;
+    image: string;
     title: string;
     description: string;
     price: string;

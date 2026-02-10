@@ -1,28 +1,6 @@
 import { Navbar } from "@/src/components/Navbar";
 import TravelLocationGrid from "@/src/components/TravelLocationGrid";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import Image from "next/image";
-
-import AgraImage1 from "@/src/assets/tour/north/agra/agra1.png";
-import AgraImage2 from "@/src/assets/tour/north/agra/agra2.png";
-import DelhiImage1 from "@/src/assets/tour/north/delhi/delhi1.png";
-import DelhiImage2 from "@/src/assets/tour/north/delhi/delhi2.png";
-import DelhiImage3 from "@/src/assets/tour/north/delhi/delhi3.png";
-import DelhiImage4 from "@/src/assets/tour/north/delhi/delhi4.png";
-import JaipurImage1 from "@/src/assets/tour/north/jaipur/jaipur1.png";
-import JaipurImage2 from "@/src/assets/tour/north/jaipur/jaipur2.png";
-import JaipurImage3 from "@/src/assets/tour/north/jaipur/jaipur3.png";
-import VaranasiImage1 from "@/src/assets/tour/north/varanasi/varanasi1.png";
-import VaranasiImage2 from "@/src/assets/tour/north/varanasi/varanasi2.png";
-import HaridwarImage1 from "@/src/assets/tour/north/haridwar/haridwar1.png";
-import HaridwarImage2 from "@/src/assets/tour/north/haridwar/haridwar2.png";
-import RishikeshImage1 from "@/src/assets/tour/north/risikesh/1.png";
-import RishikeshImage2 from "@/src/assets/tour/north/risikesh/2.png";
-import AmritsarImage1 from "@/src/assets/tour/north/amritsar/1.png";
-import AmritsarImage2 from "@/src/assets/tour/north/amritsar/2.png";
-import ShimlaImage1 from "@/src/assets/tour/north/shimla/1.png";
-import ShimlaImage2 from "@/src/assets/tour/north/shimla/2.png";
-import ShimlaImage3 from "@/src/assets/tour/north/shimla/3.png";
 
 
 
@@ -39,40 +17,40 @@ export default async function North({
 
     const cityImageMap: Record<number, any[]> = {
         0: [ // Delhi
-            DelhiImage1,
-            DelhiImage2,
-            DelhiImage3,
-            DelhiImage4
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/delhi/1.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/delhi/2.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/delhi/3.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/delhi/4.png"
         ],
         1: [ // Jaipur
-            JaipurImage1,
-            JaipurImage2,
-            JaipurImage3
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/jaipur/1.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/jaipur/2.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/jaipur/3.png"
         ],
         2: [ // Agra
-            AgraImage1,
-            AgraImage2
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/agra/1.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/agra/2.png"
         ],
         3: [ // Varanasi
-            VaranasiImage1,
-            VaranasiImage2
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/varanasi/1.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/varanasi/2.png"
         ],
         4: [ // Haridwar
-            HaridwarImage1,
-            HaridwarImage2
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/haridwar/1.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/haridwar/2.png"
         ],
         5: [ // Rishikesh
-            RishikeshImage1,
-            RishikeshImage2
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/risikesh/1.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/risikesh/2.png"
         ],
         6: [ // Amritsar
-            AmritsarImage1,
-            AmritsarImage2
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/amritsar/1.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/amritsar/2.png"
         ],
         7: [ // Shimla/Manali
-            ShimlaImage1,
-            ShimlaImage2,
-            ShimlaImage3
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/shimla/1.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/shimla/2.png",
+            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/north/shimla/3.png"
         ]
     };
 

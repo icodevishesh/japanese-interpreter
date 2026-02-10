@@ -1,6 +1,5 @@
 import { Navbar } from "@/src/components/Navbar";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import PalmistryImage from "@/src/assets/Palmistry.png";
 
 
 export default async function Dressing({
@@ -50,7 +49,7 @@ export default async function Dressing({
                             {/* Left side - Image */}
                             <div className="relative h-64 lg:h-auto flex items-center justify-center">
                                 <img
-                                    src={PalmistryImage.src}
+                                    src="https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/palmistry.png"
                                     alt="Palmistry Experience"
                                     className="max-w-full max-h-full object-contain border-2 border-[#12aa91] rounded-lg"
                                 />

@@ -1,12 +1,6 @@
 import { Navbar } from "@/src/components/Navbar";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import ExperienceCard from "@/src/components/ExperienceCard";
-import IndianCookingImage from "@/src/assets/card/veg.png";
-import SareeImage from "@/src/assets/card/Sari.png";
-import HennaArtImage from "@/src/assets/Hennatattoo.png";
-import AyurvedicMassageImage from "@/src/assets/massage.jpg";
-import PalmReadingImage from "@/src/assets/Palmistry.png";
-import YogaImage from "@/src/assets/yoga.jpg";
 
 export default async function Experiences({
     params
@@ -20,27 +14,27 @@ export default async function Experiences({
     const experiences = [
       {
         title: t("expitem.item1.title"),
-        image: IndianCookingImage,
+        image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/veg.png",
       },
       {
         title: t("expitem.item2.title"),
-        image: SareeImage,
+        image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/sari.png",
       },
       {
         title: t("expitem.item3.title"),
-        image: HennaArtImage,
+        image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/hennatattoo.png",
       },
       {
         title: t("expitem.item4.title"),
-        image: AyurvedicMassageImage,
+        image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/massage.jpg",
       },
       {
         title: t("expitem.item5.title"),
-        image: PalmReadingImage, // Using existing image as placeholder
+        image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/palmistry.png", // Using existing image as placeholder
       },
       {
         title: t("expitem.item6.title"),
-        image: YogaImage,
+        image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/yoga.jpg",
       }
     ];
 

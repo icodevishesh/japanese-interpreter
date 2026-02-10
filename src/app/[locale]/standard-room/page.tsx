@@ -23,20 +23,10 @@ import {
     Mail
 } from "lucide-react";
 
-import { Navbar } from "@/src/components/Navbar";
-import heroImage from "@/src/assets/standardroom.jpg";
-import bedroom from "@/src/assets/standard-room-img/bedroom.jpg";
-import storage from "@/src/assets/standard-room-img/storage.jpg";
-import bathroom from "@/src/assets/standard-room-img/bathroom.jpg";
-import workplace from "@/src/assets/standard-room-img/workplace.jpg";
+import { Navbar } from "@/src/components/Navbar"
 import ExperiencesCarousel from "@/src/components/ExperiencesCarousel";
-import AyurvedicMassageImage from "@/src/assets/massage.jpg";
-import IndianCookingImage from "@/src/assets/cooking.png";
-import HennaArtImage from "@/src/assets/mehendi.png";
-import YogaImage from "@/src/assets/yoga.jpg";
-import SareeImage from "@/src/assets/saaree.png";
-import WashImage from "@/src/assets/standard-room-img/wash.png";
-import { Span } from "next/dist/trace";
+import { useRouter } from "next/navigation";
+
 
 export default function StandardRoomPage({
     params
@@ -47,38 +37,38 @@ export default function StandardRoomPage({
     const t = useTranslations();
     const [isSaved, setIsSaved] = useState(false);
     const [showAllPhotos, setShowAllPhotos] = useState(false);
-    const [selectedImage, setSelectedImage] = useState<StaticImageData | null>(null);
-
+    const [selectedImage, setSelectedImage] = useState<StaticImageData | string | null>(null);
+    const router = useRouter();
     const experienceItems = [
         {
             title: t("experiences.card1.title"),
             desc: t("experiences.card1.desc"),
-            image: AyurvedicMassageImage,
+            image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/massage.jpg",
             link: `/Experiences/ayurvedic-message`
         },
         {
             title: t("experiences.card2.title"),
             desc: t("experiences.card2.desc"),
-            image: IndianCookingImage,
+            image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/veg.png",
             rank: t("experiences.card2.rank"),
             link: `/Experiences/indian-cuisine-experience`,
         },
         {
             title: t("experiences.card3.title"),
             desc: t("experiences.card3.desc"),
-            image: HennaArtImage,
+            image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/hennatattoo.png",
             link: `/Experiences/henna-art-experiences`,
         },
         {
             title: t("experiences.card4.title"),
             desc: t("experiences.card4.desc"),
-            image: YogaImage,
+            image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/yoga.jpg",
             link: `/Experiences/yoga-experience`,
         },
         {
             title: t("experiences.card5.title"),
             desc: t("experiences.card5.desc"),
-            image: SareeImage,
+            image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/sari.png",
             link: `/Experiences/traditional-saree-wearing-experience`,
         },
     ];
@@ -100,46 +90,47 @@ export default function StandardRoomPage({
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-2 rounded-2xl overflow-hidden mb-8">
                     <div className="col-span-2 row-span-2 relative aspect-[4/3] md:aspect-auto md:col-span-2 md:row-span-2">
                         <Image
-                            src={heroImage}
+                            src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7728-scaled-1-2560x1792-1.jpg"
                             alt="Hero Room"
                             fill
                             className="object-cover hover:brightness-90 transition-all cursor-pointer"
-                            onClick={() => setSelectedImage(heroImage)}
+                            onClick={() => setSelectedImage("https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7728-scaled-1-2560x1792-1.jpg")}
                         />
                     </div>
                     <div className="relative aspect-square">
                         <Image
-                            src={bedroom}
+                            src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7727-scaled-1-2560x1792-1.jpg"
                             alt="Bedroom"
                             fill
                             className="object-cover hover:brightness-90 transition-all cursor-pointer"
-                            onClick={() => setSelectedImage(bedroom)}
+                            onClick={() => setSelectedImage("https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7727-scaled-1-2560x1792-1.jpg")}
                         />
                     </div>
                     <div className="relative aspect-square">
                         <Image
-                            src={workplace}
+                            src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7515-scaled-1-1920x1344-1.jpg"
                             alt="Living Room"
                             fill
                             className="object-cover hover:brightness-90 transition-all cursor-pointer"
-                            onClick={() => setSelectedImage(workplace)}
+                            onClick={() => setSelectedImage("https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7515-scaled-1-1920x1344-1.jpg")}
                         />
                     </div>
                     <div className="relative aspect-square">
                         <Image
-                            src={bathroom}
+                            src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7525-scaled-1-2560x1792-1.jpg"
                             alt="Bathroom"
                             fill
                             className="object-cover hover:brightness-90 transition-all cursor-pointer"
-                            onClick={() => setSelectedImage(bathroom)}
+                            onClick={() => setSelectedImage("https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7525-scaled-1-2560x1792-1.jpg")}
                         />
                     </div>
                     <div className="relative aspect-square">
                         <Image
-                            src={storage}
+                            src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7523-scaled-1-1920x1344-1.jpg"
                             alt="View"
                             fill
                             className="object-cover hover:brightness-90 transition-all cursor-pointer"
+                            onClick={() => setSelectedImage("https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7523-scaled-1-1920x1344-1.jpg")}
                         />
                         <button 
                             onClick={() => setShowAllPhotos(true)}
@@ -322,7 +313,9 @@ export default function StandardRoomPage({
                                 </div>
                             </div>
 
-                            <button className="w-full bg-[#12aa91] text-white py-3.5 rounded-xl font-semibold text-lg hover:bg-[#12aa91]/80 transition-colors">
+                            <button
+                            onClick={() => router.push("/inquiry")}
+                            className="w-full bg-[#12aa91] text-white py-3.5 rounded-xl font-semibold text-lg hover:bg-[#12aa91]/80 transition-colors">
                                 {t("standardRoomSection.inquire.inquireNow")}
                             </button>
                         </div>
@@ -351,7 +344,7 @@ export default function StandardRoomPage({
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 p-2 sm:p-4">
                         <div className="relative aspect-video">
                             <Image
-                                src={heroImage}
+                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7728-scaled-1-2560x1792-1.jpg"
                                 alt="Hero Room"
                                 fill
                                 className="object-cover rounded-lg"
@@ -359,7 +352,7 @@ export default function StandardRoomPage({
                         </div>
                         <div className="relative aspect-video">
                             <Image
-                                src={bedroom}
+                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7727-scaled-1-2560x1792-1.jpg"
                                 alt="Bedroom"
                                 fill
                                 className="object-cover rounded-lg"
@@ -367,7 +360,7 @@ export default function StandardRoomPage({
                         </div>
                         <div className="relative aspect-video">
                             <Image
-                                src={workplace}
+                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7515-scaled-1-1920x1344-1.jpg"
                                 alt="Living Room"
                                 fill
                                 className="object-cover rounded-lg"
@@ -375,7 +368,7 @@ export default function StandardRoomPage({
                         </div>
                         <div className="relative aspect-video">
                             <Image
-                                src={bathroom}
+                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7525-scaled-1-2560x1792-1.jpg"
                                 alt="Bathroom"
                                 fill
                                 className="object-cover rounded-lg"
@@ -383,7 +376,7 @@ export default function StandardRoomPage({
                         </div>
                         <div className="relative aspect-video">
                             <Image
-                                src={storage}
+                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7523-scaled-1-1920x1344-1.jpg"
                                 alt="View"
                                 fill
                                 className="object-cover rounded-lg"
@@ -391,7 +384,7 @@ export default function StandardRoomPage({
                         </div>
                         <div className="relative aspect-video">
                             <Image
-                                src={WashImage}
+                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7529-scaled-1-1920x1344-1.jpg"
                                 alt="Wash"
                                 fill
                                 className="object-cover rounded-lg"

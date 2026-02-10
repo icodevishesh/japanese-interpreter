@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 
 interface ExperienceCardProps {
   title: string;
-  image: StaticImageData;
+  image: string;
   index?: number;
 }
 
@@ -64,6 +64,7 @@ export default function ExperienceCard({ title, image, index }: ExperienceCardPr
           alt={title}
           fill
           className="object-cover"
+          unoptimized={true}
         />
         
         {/* Hover overlay with border

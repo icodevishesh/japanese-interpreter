@@ -4,16 +4,6 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 import { TeamMemberCard } from "@/src/components/TeamMemberCard";
 import ImageGallery from "@/src/components/ImageGallery";
-import storyImage from "@/src/assets/self-intro-img1.jpg";
-import OneImage from "@/src/assets/SelfIntro/image1.png";
-import TwoImage from "@/src/assets/SelfIntro/image2.png";
-import ThreeImage from "@/src/assets/SelfIntro/image3.png";
-import FourImage from "@/src/assets/SelfIntro/image4.png";
-import FiveImage from "@/src/assets/SelfIntro/image5.png";
-import SixImage from "@/src/assets/SelfIntro/image6.png";
-import MemberOneImage from "@/src/assets/SelfIntro/member1.png";
-import MemberTwoImage from "@/src/assets/SelfIntro/member2.png";
-import MemberThreeImage from "@/src/assets/SelfIntro/member3.png";
 
 export default async function SelfIntroduction({
     params
@@ -63,7 +53,7 @@ export default async function SelfIntroduction({
                         {/* Main Image */}
                         <div className="overflow-hidden shadow-2xl relative z-10">
                             <Image
-                                src={storyImage}
+                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/story3-scaled-1-500x500-1.jpg"
                                 alt="Self Introduction"
                                 width={1000}
                                 height={600}
@@ -93,12 +83,12 @@ export default async function SelfIntroduction({
             {/* Image Gallery */}
             <ImageGallery
                 images={[
-                    { src: OneImage, alt: "Self Introduction 1" },
-                    { src: TwoImage, alt: "Self Introduction 2" },
-                    { src: ThreeImage, alt: "Massage Experience" },
-                    { src: FourImage, alt: "Yoga Experience" },
-                    { src: FiveImage, alt: "North India Tourism" },
-                    { src: SixImage, alt: "North India Tourism" },
+                    { src: "https://www.japanese-interpreter.com/wp-content/uploads/2025/03/IMG_4365.jpg", alt: "Self Introduction 1" },
+                    { src: "https://www.japanese-interpreter.com/wp-content/uploads/2025/03/IMG_0254-1-scaled.jpg", alt: "Self Introduction 2" },
+                    { src: "https://www.japanese-interpreter.com/wp-content/uploads/2025/03/3rd-scaled.jpg", alt: "Massage Experience" },
+                    { src: "https://www.japanese-interpreter.com/wp-content/uploads/2025/03/hathh-khade-1-1-scaled.jpg", alt: "Yoga Experience" },
+                    { src: "https://www.japanese-interpreter.com/wp-content/uploads/2025/03/1st_row_2nd_pic-scaled.jpg", alt: "North India Tourism" },
+                    { src: "https://www.japanese-interpreter.com/wp-content/uploads/2025/03/PHOTO-2024-05-02-18-00-40.jpg", alt: "North India Tourism" },
                 ]}
             />
 
@@ -118,19 +108,19 @@ export default async function SelfIntroduction({
                             name={t(`teamMember.member1.name`)}
                             role={t(`teamMember.member1.role`)}
                             description={t(`teamMember.member1.description`)}
-                            image={MemberOneImage}
+                            image="https://www.japanese-interpreter.com/wp-content/uploads/2024/11/2-1.png"
                         />
                         <TeamMemberCard
                             name={t(`teamMember.member2.name`)}
                             role={t(`teamMember.member2.role`)}
                             description={t(`teamMember.member2.description`)}
-                            image={MemberTwoImage}
+                            image="https://www.japanese-interpreter.com/wp-content/uploads/2024/11/3-1.png"
                         />
                         <TeamMemberCard
                             name={t(`teamMember.member3.name`)}
                             role={t(`teamMember.member3.role`)}
                             description={t(`teamMember.member3.description`)}
-                            image={MemberThreeImage}
+                            image="https://www.japanese-interpreter.com/wp-content/uploads/2024/11/1-1.png"
                         />
                     </div>
                 </div>
