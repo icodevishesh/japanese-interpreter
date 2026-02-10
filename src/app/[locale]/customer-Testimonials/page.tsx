@@ -23,11 +23,11 @@ export default async function CustomerTestimonials({
         "Reiko": ReikoImage,
         "Kazuyo": KazuyoImage,
         "Noriko": NorikoImage,
-        "Rina": "", // Add image when available
-        "Akemi": "", // Add image when available
-        "Madoka": "", // Add image when available
-        "Akiko": "", // Add image when available
-        "Sachi": "" // Add image when available
+        "Rina": "",
+        "Akemi": "",
+        "Madoka": "",
+        "Akiko": "",
+        "Sachi": ""
     };
 
 

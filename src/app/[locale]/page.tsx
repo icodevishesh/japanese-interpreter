@@ -119,7 +119,7 @@ export default async function Home({
                         {/* Main Image */}
                         <div className="rounded-3xl overflow-hidden shadow-2xl relative z-10">
                             <Image
-                                src={StoryImage}
+                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/story3-scaled-1-500x500-1.jpg"
                                 alt="Trade show"
                                 width={800}
                                 height={600}
@@ -295,7 +295,7 @@ export default async function Home({
                         {t("tourism.info")}
                     </p>
                     <Link
-                        href= "/inquiry"
+                        href="/inquiry"
                         className="px-4 py-2 bg-[#12aa91] text-white rounded-lg font-semibold hover:bg-[#109882] transition-colors shadow-lg"
                     >
                         {t("tourism.button")}
