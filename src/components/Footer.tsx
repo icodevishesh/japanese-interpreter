@@ -54,8 +54,8 @@ export function Footer({ locale }: { locale: string }) {
                             </div>
                             <div className="flex flex-col">
                                 <span className="text-[10px] text-gray-500 uppercase tracking-widest font-bold">{t("contact.emailLabel")}</span>
-                                <Link href="mailto:bkvermaindo@gmail.com" target="_blank">
-                                    <span className="text-sm font-semibold text-gray-200">bkvermaindo@gmail.com</span>
+                                <Link href="mailto:info@japanese-interpreter.com" target="_blank">
+                                    <span className="text-sm font-semibold text-gray-200">info@japanese-interpreter.comm</span>
                                 </Link>
                             </div>
                         </div>

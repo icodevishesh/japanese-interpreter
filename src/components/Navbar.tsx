@@ -37,8 +37,8 @@ export const Navbar: React.FC<NavbarProps> = ({ locale }) => {
 
                     <div className="flex items-center gap-2">
                         <Mail size={14} className="text-white" />
-                        <a href="mailto:bkvermaindo@gmail.com" className="hidden sm:inline cursor-pointer hover:underline">bkvermaindo@gmail.com</a>
-                        <a href="mailto:bkvermaindo@gmail.com" className="sm:hidden text-[10px] cursor-pointer hover:underline">bkvermaindo@gmail.com</a>
+                        <a href="mailto:info@japanese-interpreter.com" className="hidden sm:inline cursor-pointer hover:underline">info@japanese-interpreter.com</a>
+                        <a href="mailto:info@japanese-interpreter.com" className="sm:hidden text-[10px] cursor-pointer hover:underline">info@japanese-interpreter.com</a>
                     </div>
                 </div>
                 <div className="relative z-10 flex items-center gap-4 md:gap-6">
