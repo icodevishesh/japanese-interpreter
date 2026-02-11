@@ -49,7 +49,7 @@ export default async function Hennatattoo({
                             {/* Left side - Image */}
                             <div className="relative h-64 lg:h-auto flex items-center justify-center bg-white">
                                 <img
-                                    src="https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/hennatattoo.png"
+                                    src="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802831/Hennatattoo_6_11zon_vpym5o.jpg"
                                     alt="Henna Art Experience"
                                     className="max-w-full max-h-full object-contain border-2 border-[#12aa91] rounded-lg"
                                 />

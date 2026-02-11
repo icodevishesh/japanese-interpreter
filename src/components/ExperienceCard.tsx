@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 
 interface ExperienceCardProps {
   title: string;
-  image: string;
+  image: StaticImageData | string;
   index?: number;
 }
 

@@ -55,7 +55,7 @@ export default async function Homestay({
                 <RoomCarousal
                     rooms={[
                             {
-                                image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7728-scaled-1.jpg",
+                                image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802986/standard-room_1_11zon_ouaxat.jpg",
                                 title: t("stay.standardRoom"),
                                 description: t("stay.standardRoomDesc"),
                                 price: t("stay.standardRoomInfo"),
@@ -67,7 +67,7 @@ export default async function Homestay({
                                 link: `/standard-room`
                             },
                             {
-                                image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/deeluxrrom1-scaled-1.jpeg",
+                                image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803023/deeluxrrom1_10_11zon_zwhqdk.jpg",
                                 title: t("stay.deluxeRoom"),
                                 description: t("stay.deluxeRoomDesc"),
                                 price: t("stay.deluxeRoomInfo"),

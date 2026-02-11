@@ -53,7 +53,7 @@ export default async function SelfIntroduction({
                         {/* Main Image */}
                         <div className="overflow-hidden shadow-2xl relative z-10">
                             <Image
-                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/story3-scaled-1-500x500-1.jpg"
+                                src="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770804244/self-intro-img1_21_11zon_i5bjgf.jpg"
                                 alt="Self Introduction"
                                 width={1000}
                                 height={600}
@@ -83,12 +83,12 @@ export default async function SelfIntroduction({
             {/* Image Gallery */}
             <ImageGallery
                 images={[
-                    { src: "https://www.japanese-interpreter.com/wp-content/uploads/2025/03/IMG_4365.jpg", alt: "Self Introduction 1" },
-                    { src: "https://www.japanese-interpreter.com/wp-content/uploads/2025/03/IMG_0254-1-scaled.jpg", alt: "Self Introduction 2" },
-                    { src: "https://www.japanese-interpreter.com/wp-content/uploads/2025/03/3rd-scaled.jpg", alt: "Massage Experience" },
-                    { src: "https://www.japanese-interpreter.com/wp-content/uploads/2025/03/hathh-khade-1-1-scaled.jpg", alt: "Yoga Experience" },
-                    { src: "https://www.japanese-interpreter.com/wp-content/uploads/2025/03/1st_row_2nd_pic-scaled.jpg", alt: "North India Tourism" },
-                    { src: "https://www.japanese-interpreter.com/wp-content/uploads/2025/03/PHOTO-2024-05-02-18-00-40.jpg", alt: "North India Tourism" },
+                    { src: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770804250/image1_9_11zon_o70tvm.jpg", alt: "Self Introduction 1" },
+                    { src: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770804253/image2_1_11zon_rnn8ni.jpg", alt: "Self Introduction 2" },
+                    { src: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770804257/image3_2_11zon_v0m7tb.jpg", alt: "Massage Experience" },
+                    { src: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770804261/image4_3_11zon_ptjtfv.jpg", alt: "Yoga Experience" },
+                    { src: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770804266/image5_4_11zon_iqo31i.jpg", alt: "North India Tourism" },
+                    { src: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770804272/image6_5_11zon_blghbw.jpg", alt: "North India Tourism" },
                 ]}
             />
 
@@ -108,19 +108,19 @@ export default async function SelfIntroduction({
                             name={t(`teamMember.member1.name`)}
                             role={t(`teamMember.member1.role`)}
                             description={t(`teamMember.member1.description`)}
-                            image="https://www.japanese-interpreter.com/wp-content/uploads/2024/11/2-1.png"
+                            image="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770792759/member1_omfip3.png"
                         />
                         <TeamMemberCard
                             name={t(`teamMember.member2.name`)}
                             role={t(`teamMember.member2.role`)}
                             description={t(`teamMember.member2.description`)}
-                            image="https://www.japanese-interpreter.com/wp-content/uploads/2024/11/3-1.png"
+                            image="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770792762/member2_l43hps.png"
                         />
                         <TeamMemberCard
                             name={t(`teamMember.member3.name`)}
                             role={t(`teamMember.member3.role`)}
                             description={t(`teamMember.member3.description`)}
-                            image="https://www.japanese-interpreter.com/wp-content/uploads/2024/11/1-1.png"
+                            image="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770792767/member3_w9ehjj.png"
                         />
                     </div>
                 </div>

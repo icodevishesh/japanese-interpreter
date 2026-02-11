@@ -90,47 +90,47 @@ export default function StandardRoomPage({
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-2 rounded-2xl overflow-hidden mb-8">
                     <div className="col-span-2 row-span-2 relative aspect-[4/3] md:aspect-auto md:col-span-2 md:row-span-2">
                         <Image
-                            src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7728-scaled-1-2560x1792-1.jpg"
+                            src="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802986/standard-room_1_11zon_ouaxat.jpg"
                             alt="Hero Room"
                             fill
                             className="object-cover hover:brightness-90 transition-all cursor-pointer"
-                            onClick={() => setSelectedImage("https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7728-scaled-1-2560x1792-1.jpg")}
+                            onClick={() => setSelectedImage("https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802986/standard-room_1_11zon_ouaxat.jpg")}
                         />
                     </div>
                     <div className="relative aspect-square">
                         <Image
-                            src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7727-scaled-1-2560x1792-1.jpg"
+                            src="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802987/bedroom_3_11zon_xqji0b.jpg"
                             alt="Bedroom"
                             fill
                             className="object-cover hover:brightness-90 transition-all cursor-pointer"
-                            onClick={() => setSelectedImage("https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7727-scaled-1-2560x1792-1.jpg")}
+                            onClick={() => setSelectedImage("https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802987/bedroom_3_11zon_xqji0b.jpg")}
                         />
                     </div>
                     <div className="relative aspect-square">
                         <Image
-                            src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7515-scaled-1-1920x1344-1.jpg"
+                            src="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802991/workplace_5_11zon_rbey5p.jpg"
                             alt="Living Room"
                             fill
                             className="object-cover hover:brightness-90 transition-all cursor-pointer"
-                            onClick={() => setSelectedImage("https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7515-scaled-1-1920x1344-1.jpg")}
+                            onClick={() => setSelectedImage("https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802991/workplace_5_11zon_rbey5p.jpg")}
                         />
                     </div>
                     <div className="relative aspect-square">
                         <Image
-                            src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7525-scaled-1-2560x1792-1.jpg"
+                            src="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802986/bathroom_2_11zon_exdop3.jpg"
                             alt="Bathroom"
                             fill
                             className="object-cover hover:brightness-90 transition-all cursor-pointer"
-                            onClick={() => setSelectedImage("https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7525-scaled-1-2560x1792-1.jpg")}
+                            onClick={() => setSelectedImage("https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802986/bathroom_2_11zon_exdop3.jpg")}
                         />
                     </div>
                     <div className="relative aspect-square">
                         <Image
-                            src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7523-scaled-1-1920x1344-1.jpg"
+                            src="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802988/storage_4_11zon_bklohb.jpg"
                             alt="View"
                             fill
                             className="object-cover hover:brightness-90 transition-all cursor-pointer"
-                            onClick={() => setSelectedImage("https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7523-scaled-1-1920x1344-1.jpg")}
+                            onClick={() => setSelectedImage("https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802988/storage_4_11zon_bklohb.jpg")}
                         />
                         <button 
                             onClick={() => setShowAllPhotos(true)}
@@ -344,7 +344,7 @@ export default function StandardRoomPage({
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 p-2 sm:p-4">
                         <div className="relative aspect-video">
                             <Image
-                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7728-scaled-1-2560x1792-1.jpg"
+                                src="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802986/standard-room_1_11zon_ouaxat.jpg"
                                 alt="Hero Room"
                                 fill
                                 className="object-cover rounded-lg"
@@ -352,7 +352,7 @@ export default function StandardRoomPage({
                         </div>
                         <div className="relative aspect-video">
                             <Image
-                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7727-scaled-1-2560x1792-1.jpg"
+                                src="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802987/bedroom_3_11zon_xqji0b.jpg"
                                 alt="Bedroom"
                                 fill
                                 className="object-cover rounded-lg"
@@ -360,7 +360,7 @@ export default function StandardRoomPage({
                         </div>
                         <div className="relative aspect-video">
                             <Image
-                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7515-scaled-1-1920x1344-1.jpg"
+                                src="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802991/workplace_5_11zon_rbey5p.jpg"
                                 alt="Living Room"
                                 fill
                                 className="object-cover rounded-lg"
@@ -368,7 +368,7 @@ export default function StandardRoomPage({
                         </div>
                         <div className="relative aspect-video">
                             <Image
-                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7525-scaled-1-2560x1792-1.jpg"
+                                src="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802991/workplace_5_11zon_rbey5p.jpg"
                                 alt="Bathroom"
                                 fill
                                 className="object-cover rounded-lg"
@@ -376,7 +376,7 @@ export default function StandardRoomPage({
                         </div>
                         <div className="relative aspect-video">
                             <Image
-                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7523-scaled-1-1920x1344-1.jpg"
+                                src="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802988/storage_4_11zon_bklohb.jpg"
                                 alt="View"
                                 fill
                                 className="object-cover rounded-lg"
@@ -384,7 +384,7 @@ export default function StandardRoomPage({
                         </div>
                         <div className="relative aspect-video">
                             <Image
-                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7529-scaled-1-1920x1344-1.jpg"
+                                src="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802990/wash_1_11zon_qnfh0b.jpg"
                                 alt="Wash"
                                 fill
                                 className="object-cover rounded-lg"

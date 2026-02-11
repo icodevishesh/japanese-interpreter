@@ -49,7 +49,7 @@ export default async function Dressing({
                             {/* Left side - Image */}
                             <div className="relative h-64 lg:h-auto flex items-center justify-center">
                                 <img
-                                    src="https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/palmistry.png"
+                                    src="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802906/Palmistry_7_11zon_lhax5a.jpg"
                                     alt="Palmistry Experience"
                                     className="max-w-full max-h-full object-contain border-2 border-[#12aa91] rounded-lg"
                                 />

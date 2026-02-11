@@ -1,6 +1,32 @@
 import { Navbar } from "@/src/components/Navbar";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import ExperienceCard from "@/src/components/ExperienceCard";
+const experiences = [
+  {
+    title: "Indian Cuisine Experience",
+    image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802866/veg_2_11zon_commpn.jpg",
+  },
+  {
+    title: "Experience how to wrap a sari (dressing)",
+    image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802936/Sari_1_11zon_xmzuic.jpg",
+  },
+  {
+    title: "Henna art experience (henna tattoo)",
+    image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802831/Hennatattoo_6_11zon_vpym5o.jpg",
+  },
+  {
+    title: "Ayurvedic massage (Shirodhara)",
+    image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770790566/massage_j9jfj7.jpg",
+  },
+  {
+    title: "Palmistry and fortune telling",
+    image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802906/Palmistry_7_11zon_lhax5a.jpg", // Using existing image as placeholder
+  },
+  {
+    title: "Yoga experience",
+    image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770790652/yoga_iorclm.jpg",
+  },
+];
 
 export default async function Experiences({
     params
@@ -10,33 +36,6 @@ export default async function Experiences({
     const { locale } = await params;
     setRequestLocale(locale);
     const t = await getTranslations();
-
-    const experiences = [
-      {
-        title: t("expitem.item1.title"),
-        image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/veg.png",
-      },
-      {
-        title: t("expitem.item2.title"),
-        image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/sari.png",
-      },
-      {
-        title: t("expitem.item3.title"),
-        image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/hennatattoo.png",
-      },
-      {
-        title: t("expitem.item4.title"),
-        image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/massage.jpg",
-      },
-      {
-        title: t("expitem.item5.title"),
-        image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/palmistry.png", // Using existing image as placeholder
-      },
-      {
-        title: t("expitem.item6.title"),
-        image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/yoga.jpg",
-      }
-    ];
 
     return (
         <div>
@@ -50,7 +49,7 @@ export default async function Experiences({
                         {t("exphero.title")}
                     </h1>
                     <nav className="mb-6">
-                        <ol className="flex items-center justify-center space-x-4 mt-4 text-sm">
+                        <ol className="flex items-center justify-center space-x-2 text-sm">
                             <li>
                                 <a
                                     href={`/${locale}`}
@@ -69,9 +68,9 @@ export default async function Experiences({
             </section>
 
             {/* Experiences Grid */}
-            <main className="bg-gray-50 py-20 px-6">
-                <div className="max-w-6xl mx-auto grid gap-6 md:gap-8
-                    grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-auto">
+            <main className="bg-gray-50 py-12 px-6">
+                <div className="max-w-6xl mx-auto grid gap-12 
+                    grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                     {experiences.map((item, index) => (
                         <ExperienceCard key={index} {...item} index={index} />
                     ))}

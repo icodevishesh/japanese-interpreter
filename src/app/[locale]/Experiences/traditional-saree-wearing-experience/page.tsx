@@ -48,7 +48,7 @@ export default async function Dressing({
                             {/* Left side - Image */}
                            <div className="relative h-64 lg:h-auto flex items-center justify-center bg-white">
                                 <img
-                                    src="https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/saristepsfiy.png"
+                                    src="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802935/Dressing_5_11zon_ve4jgw.jpg"
                                     alt="Traditional Saree Wearing Experience"
                                     className="max-w-full max-h-full object-contain border-2 border-[#12aa91] rounded-lg"
                                 />

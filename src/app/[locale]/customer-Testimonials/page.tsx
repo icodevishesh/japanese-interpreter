@@ -17,9 +17,9 @@ export default async function CustomerTestimonials({
 
     // Map testimonial names to their images
     const testimonialImages: { [key: string]: any } = {
-        "Reiko": "https://www.japanese-interpreter.com/wp-content/uploads/images/customer-testimonials/reiko.jpeg",
-        "Kazuyo": "https://www.japanese-interpreter.com/wp-content/uploads/images/customer-testimonials/kazuyo.jpeg",
-        "Noriko": "https://www.japanese-interpreter.com/wp-content/uploads/images/customer-testimonials/noriko.jpeg",
+        "Reiko": "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770790463/reiko_j0uynt.jpg",
+        "Kazuyo": "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770790463/kazuyo_ntfuxc.jpg",
+        "Noriko": "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770790463/noriko_jobwg8.jpg",
         "Rina": "",
         "Akemi": "",
         "Madoka": "",

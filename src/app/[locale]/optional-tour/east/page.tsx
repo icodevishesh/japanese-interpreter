@@ -15,40 +15,40 @@ export default async function East({
 
     const cityImageMap: Record<number, any[]> = {
         0: [ // Kolkata
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/kolkata/1.png",
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/kolkata/2.png",
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/kolkata/3.png"
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803227/kol1_3__21_11zon_rhu0a7.jpg",
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803226/kol1_2__20_11zon_kavgl0.jpg",
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803224/kol1_1__19_11zon_spkmgb.jpg"
         ],
         1: [ // Darjeeling
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/darjeeling/1.png",
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/darjeeling/2.png"
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803177/da1_2__18_11zon_ingegx.jpg",
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803174/da1_1__17_11zon_kpns93.jpg"
         ],
         2: [ // Bodh Gaya
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/bodh-gaya/1.png",
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/bodh-gaya/2.png"
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803127/bg1_15_11zon_igy1cs.jpg",
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803129/bg2_16_11zon_uzzpnm.jpg"
         ],
         3: [ // Puri
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/puri/1.png",
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/puri/2.png"
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803287/puri1_1__13_11zon_ybxfmi.jpg",
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803289/puri1_2__14_11zon_nflxvc.jpg"
         ],
         4: [// Sikkim
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/sikkim/1.png",
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/sikkim/2.png",
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/sikkim/3.png",
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/sikkim/4.png"
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803289/puri1_2__14_11zon_nflxvc.jpg",
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803313/sikkim1_3__11_11zon_ebyunn.jpg",
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803311/sikkim1_2__10_11zon_b12qo5.jpg",
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803308/sikkim1_1__9_11zon_ys1tnt.jpg"
         ],
         5: [ // Kaziranga
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/kaziranga/1.png",
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/kaziranga/2.png",
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/kaziranga/3.png"
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803197/kaz1_1__6_11zon_r472d0.jpg",
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803200/kaz1_2__7_11zon_ny3jup.jpg",
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803202/kaz1_3__8_11zon_yxnsjz.png"
         ],
         6: [ // Nalanda
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/nalanda/1.png",
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/nalanda/2.png",
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803270/nal1_3__5_11zon_lrnfh1.jpg",
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803268/nal1_2__4_11zon_hcy8lm.jpg"
         ],
         7: [ // Ziro
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/ziro/1.png",
-            "https://www.japanese-interpreter.com/wp-content/uploads/images/optional-tour/east/ziro/2.png"
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803325/ziro1_2__2_11zon_sg6yzf.jpg",
+            "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803322/ziro1_1__1_11zon_lgjisn.jpg"
         ]
     };
 
