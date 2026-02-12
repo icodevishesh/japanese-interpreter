@@ -44,32 +44,32 @@ export default function StandardRoomPage({
             title: t("experiences.card1.title"),
             desc: t("experiences.card1.desc"),
             image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770790566/massage_j9jfj7.jpg",
-            link: `/Experiences/ayurvedic-message`
+            link: `/experiences/ayurvedic-message`
         },
         {
             title: t("experiences.card2.title"),
             desc: t("experiences.card2.desc"),
             image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802866/veg_2_11zon_commpn.jpg",
             rank: t("experiences.card2.rank"),
-            link: `/Experiences/indian-cuisine-experience`,
+            link: `/experiences/indian-cuisine-experience`,
         },
         {
             title: t("experiences.card3.title"),
             desc: t("experiences.card3.desc"),
             image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802831/Hennatattoo_6_11zon_vpym5o.jpg",
-            link: `/Experiences/henna-art-experiences`,
+            link: `/experiences/henna-art-experiences`,
         },
         {
             title: t("experiences.card4.title"),
             desc: t("experiences.card4.desc"),
             image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770790652/yoga_iorclm.jpg",
-            link: `/Experiences/yoga-experience`,
+            link: `/experiences/yoga-experience`,
         },
         {
             title: t("experiences.card5.title"),
             desc: t("experiences.card5.desc"),
             image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802936/Sari_1_11zon_xmzuic.jpg",
-            link: `/Experiences/traditional-saree-wearing-experience`,
+            link: `/experiences/traditional-saree-wearing-experience`,
         },
     ];
 
@@ -312,9 +312,9 @@ export default function StandardRoomPage({
                                 </div>
                             </div>
 
-                            <button 
-                            onClick={() => router.push("/inquiry")}
-                            className="w-full bg-[#12aa91] text-white py-3.5 rounded-xl font-semibold text-lg hover:bg-[#12aa91]/80 transition-colors">
+                            <button
+                                onClick={() => router.push("/inquiry")}
+                                className="w-full bg-[#12aa91] text-white py-3.5 rounded-xl font-semibold text-lg hover:bg-[#12aa91]/80 transition-colors">
                                 {t("standardRoomSection.inquire.inquireNow")}
                             </button>
                         </div>
