@@ -72,18 +72,18 @@ export function Footer({ locale }: { locale: string }) {
                 </div>
 
                 {/* Address */}
-            <div className="flex flex-col gap-6">
-                <h4 className="text-lg font-bold tracking-tight text-white">
-                    {t("address.value")}</h4>
-                <a
-                    href="https://maps.app.goo.gl/iFwMNLJQJaWp6xXF7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 text-sm leading-relaxed max-w-xs hover:underline transition-colors cursor-pointer"
-                >
-                    {t("address.title")}
-                </a>
-            </div>
+                <div className="flex flex-col gap-6">
+                    <h4 className="text-lg font-bold tracking-tight text-white">
+                        {t("address.value")}</h4>
+                    <a
+                        href="https://maps.app.goo.gl/iFwMNLJQJaWp6xXF7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 text-sm leading-relaxed max-w-xs hover:underline transition-colors cursor-pointer"
+                    >
+                        {t("address.title")}
+                    </a>
+                </div>
 
             </div>
 

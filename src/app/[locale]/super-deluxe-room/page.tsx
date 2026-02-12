@@ -312,9 +312,9 @@ export default function StandardRoomPage({
                                 </div>
                             </div>
 
-                            <button 
-                            onClick={() => router.push("/inquiry")}
-                            className="w-full bg-[#12aa91] text-white py-3.5 rounded-xl font-semibold text-lg hover:bg-[#12aa91]/80 transition-colors">
+                            <button
+                                onClick={() => router.push("/inquiry")}
+                                className="w-full bg-[#12aa91] text-white py-3.5 rounded-xl font-semibold text-lg hover:bg-[#12aa91]/80 transition-colors">
                                 {t("standardRoomSection.inquire.inquireNow")}
                             </button>
                         </div>
