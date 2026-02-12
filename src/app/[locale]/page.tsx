@@ -25,31 +25,31 @@ export default async function Home({
             title: t("experiences.card1.title"),
             desc: t("experiences.card1.desc"),
             image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770790566/massage_j9jfj7.jpg",
-            link: `${locale}/Experiences/ayurvedic-message`
+            link: `${locale}/experiences/ayurvedic-message`
         },
         {
             title: t("experiences.card2.title"),
             desc: t("experiences.card2.desc"),
             image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802865/cooking_9_11zon_ae6crx.jpg",
-            link: `${locale}/Experiences/indian-cuisine-experience`,
+            link: `${locale}/experiences/indian-cuisine-experience`,
             rank: t("experiences.card2.rank"),
         },
         {
             title: t("experiences.card3.title"),
             desc: t("experiences.card3.desc"),
-            link: `${locale}/Experiences/henna-art-experiences`,
+            link: `${locale}/experiences/henna-art-experiences`,
             image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802832/mehendi_16_11zon_uyrmif.jpg",
         },
         {
             title: t("experiences.card4.title"),
             desc: t("experiences.card4.desc"),
-            link: `${locale}/Experiences/yoga-experience`,
+            link: `${locale}/experiences/yoga-experience`,
             image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770790652/yoga_iorclm.jpg",
         },
         {
             title: t("experiences.card5.title"),
             desc: t("experiences.card5.desc"),
-            link: `${locale}/Experiences/traditional-saree-wearing-experience`,
+            link: `${locale}/experiences/traditional-saree-wearing-experience`,
             image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802935/saaree_20_11zon_rliv97.jpg",
             rank: t("experiences.card5.rank"),
         },

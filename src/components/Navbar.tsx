@@ -73,7 +73,7 @@ export const Navbar: React.FC<NavbarProps> = ({ locale }) => {
                         {/* Dropdown Placeholder */}
                         <div className="absolute top-full left-0 hidden group-hover:block bg-white shadow-lg rounded-md mt-0 py-2 w-56 z-50 border border-gray-100">
                             <Link href={`/${locale}/homestay`} className="block px-4 py-2 hover:bg-[#f0f9f8] hover:text-[#12aa91]">{t("homestay")}</Link>
-                            <Link href={`/${locale}/Experiences`} className="block px-4 py-2 hover:bg-[#f0f9f8] hover:text-[#12aa91]">{t("culturalExperiences")}</Link>
+                            <Link href={`/${locale}/experiences`} className="block px-4 py-2 hover:bg-[#f0f9f8] hover:text-[#12aa91]">{t("culturalExperiences")}</Link>
                         </div>
                     </div>
                     <Link href={`/${locale}/optional-tour`} className="hover:text-[#12aa91] transition-colors whitespace-nowrap">
@@ -110,7 +110,7 @@ export const Navbar: React.FC<NavbarProps> = ({ locale }) => {
                     <Link href={`/${locale}/homestay`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
                         {t("homestay")}
                     </Link>
-                    <Link href={`/${locale}/Experiences`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
+                    <Link href={`/${locale}/experiences`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
                         {t("culturalExperiences")}
                     </Link>
                     <Link href={`/${locale}/optional-tour`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>

@@ -28,7 +28,7 @@ export function Footer({ locale }: { locale: string }) {
                         <Link href="https://www.japanese-interpreter.com/" target="_blank" className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.website")}</Link>
                         <Link href={`/${locale}/self-introduction`} className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.profile")}</Link>
                         <Link href={`/${locale}/homestay`} className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.homestay")}</Link>
-                        <Link href={`/${locale}/Experiences`} className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.culturalExperiences")}</Link>
+                        <Link href={`/${locale}/experiences`} className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.culturalExperiences")}</Link>
                         <Link href={`/${locale}/optional-tour`} className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.tours")}</Link>
                         <Link href={`/${locale}/customer-testimonials`} className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.testimonials")}</Link>
                     </nav>
@@ -55,7 +55,7 @@ export function Footer({ locale }: { locale: string }) {
                             <div className="flex flex-col">
                                 <span className="text-[10px] text-gray-500 uppercase tracking-widest font-bold">{t("contact.emailLabel")}</span>
                                 <Link href="mailto:info@japanese-interpreter.com" target="_blank">
-                                    <span className="text-sm font-semibold text-gray-200">info@japanese-interpreter.comm</span>
+                                    <span className="text-sm font-semibold text-gray-200">info@japanese-interpreter.com</span>
                                 </Link>
                             </div>
                         </div>

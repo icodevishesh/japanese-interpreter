@@ -44,7 +44,7 @@ const FloatingSocials = ({ locale }: { locale: string }) => {
 
                 {/* Inquiry button */}
                 <Link
-                    href={"#contact-form"}
+                    href={`/${locale}/inquiry`}
                     className="w-7 h-7 md:w-12 md:h-12 bg-[#06C755] rounded-full flex items-center justify-center text-white shadow-lg hover:scale-110 transition-transform duration-300 group"
                     aria-label="Custom Icon"
                 >

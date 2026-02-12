@@ -44,32 +44,32 @@ export default function StandardRoomPage({
             title: t("experiences.card1.title"),
             desc: t("experiences.card1.desc"),
             image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/massage.jpg",
-            link: `/Experiences/ayurvedic-message`
+            link: `/experiences/ayurvedic-message`
         },
         {
             title: t("experiences.card2.title"),
             desc: t("experiences.card2.desc"),
             image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/veg.png",
             rank: t("experiences.card2.rank"),
-            link: `/Experiences/indian-cuisine-experience`,
+            link: `/experiences/indian-cuisine-experience`,
         },
         {
             title: t("experiences.card3.title"),
             desc: t("experiences.card3.desc"),
             image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/hennatattoo.png",
-            link: `/Experiences/henna-art-experiences`,
+            link: `/experiences/henna-art-experiences`,
         },
         {
             title: t("experiences.card4.title"),
             desc: t("experiences.card4.desc"),
             image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/yoga.jpg",
-            link: `/Experiences/yoga-experience`,
+            link: `/experiences/yoga-experience`,
         },
         {
             title: t("experiences.card5.title"),
             desc: t("experiences.card5.desc"),
             image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/sari.png",
-            link: `/Experiences/traditional-saree-wearing-experience`,
+            link: `/experiences/traditional-saree-wearing-experience`,
         },
     ];
 

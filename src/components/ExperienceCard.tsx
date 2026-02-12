@@ -26,22 +26,22 @@ export default function ExperienceCard({ title, image, index }: ExperienceCardPr
     // Redirect to specific experience section based on index
     if (index === 1) {
       // Sari wrapping - use window.location.href for full page redirect
-      window.location.href = `/${locale}/Experiences/traditional-saree-wearing-experience`;
+      window.location.href = `/${locale}/experiences/traditional-saree-wearing-experience`;
     } else if (index === 2) {
       // Henna art - use window.location.href for full page redirect
-      window.location.href = `/${locale}/Experiences/henna-art-experiences`;
+      window.location.href = `/${locale}/experiences/henna-art-experiences`;
     } else if (index === 3) {
       // Shirodhara - use window.location.href for full page redirect
-      window.location.href = `/${locale}/Experiences/ayurvedic-message`;
+      window.location.href = `/${locale}/experiences/ayurvedic-message`;
     } else if (index === 4) {
       // Palmistry - use window.location.href for full page redirect
-      window.location.href = `/${locale}/Experiences/palm-reading`;
+      window.location.href = `/${locale}/experiences/palm-reading`;
     } else if (index === 5) {
       // Yoga - use window.location.href for full page redirect
-      window.location.href = `/${locale}/Experiences/yoga-experience`;
+      window.location.href = `/${locale}/experiences/yoga-experience`;
     } else if (index === 0) {
       // Indian Cuisine - use window.location.href for full page redirect
-      window.location.href = `/${locale}/Experiences/indian-cuisine-experience`;
+      window.location.href = `/${locale}/experiences/indian-cuisine-experience`;
     } else {
       // Other experiences - use window.location.href for full page redirect
       window.location.href = `/${locale}#experiences`;
