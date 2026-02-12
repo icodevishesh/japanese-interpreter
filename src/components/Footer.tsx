@@ -75,7 +75,7 @@ export function Footer({ locale }: { locale: string }) {
                     <h4 className="text-lg font-bold tracking-tight text-white">
                         {t("address.value")}</h4>
                     <a
-                        href={`${locale}/inquiry`}
+                        href={`/${locale}/inquiry`}
                         className="text-gray-400 text-sm leading-relaxed max-w-xs hover:underline transition-colors cursor-pointer"
                     >
                         {t("address.title")}
