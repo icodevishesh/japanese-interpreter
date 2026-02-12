@@ -333,7 +333,7 @@ export default function StandardRoomPage({
             </div>
 
             <div className="w-full bg-white py-12 md:py-24 px-4 md:px-12 relative overflow-hidden">
-                <div className="text-2xl font-semibold text-black ml-22">{t("standardRoomSection.exploreExperiences.title")}</div>
+                <div className="text-xl md:text-2xl font-semibold text-black md:ml-22 ml-0">{t("standardRoomSection.exploreExperiences.title")}</div>
                 <div className="border-b-2 border-black/10 max-w-7xl mx-auto my-8"></div>
                 <ExperiencesCarousel items={experienceItems} />
             </div>
