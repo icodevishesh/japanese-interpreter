@@ -53,6 +53,12 @@ export default async function Home({
             image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802935/saaree_20_11zon_rliv97.jpg",
             rank: t("experiences.card5.rank"),
         },
+        {
+            title: t("experiences.card6.title"),
+            desc: t("experiences.card6.desc"),
+            link: `${locale}/experiences/palm-reading`,
+            image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770874265/4_wfo0qp.webp",
+        }
     ];
 
     return (

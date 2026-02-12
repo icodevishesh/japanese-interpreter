@@ -25,7 +25,6 @@ export function Footer({ locale }: { locale: string }) {
                 <div className="flex flex-col gap-6">
                     <h4 className="text-lg font-bold tracking-tight text-white">{t("page.title")}</h4>
                     <nav className="flex flex-col gap-3">
-                        <Link href="https://www.japanese-interpreter.com/" target="_blank" className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.website")}</Link>
                         <Link href={`/${locale}/self-introduction`} className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.profile")}</Link>
                         <Link href={`/${locale}/homestay`} className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.homestay")}</Link>
                         <Link href={`/${locale}/experiences`} className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.culturalExperiences")}</Link>
@@ -76,9 +75,7 @@ export function Footer({ locale }: { locale: string }) {
                     <h4 className="text-lg font-bold tracking-tight text-white">
                         {t("address.value")}</h4>
                     <a
-                        href="https://maps.app.goo.gl/iFwMNLJQJaWp6xXF7"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href={`${locale}/inquiry`}
                         className="text-gray-400 text-sm leading-relaxed max-w-xs hover:underline transition-colors cursor-pointer"
                     >
                         {t("address.title")}

@@ -68,9 +68,16 @@ export default function StandardRoomPage({
         {
             title: t("experiences.card5.title"),
             desc: t("experiences.card5.desc"),
-            image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/sari.png",
+            image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802935/saaree_20_11zon_rliv97.jpg",
             link: `/experiences/traditional-saree-wearing-experience`,
+            rank: t("experiences.card5.rank"),
         },
+        {
+            title: t("experiences.card6.title"),
+            desc: t("experiences.card6.desc"),
+            link: `/experiences/palm-reading`,
+            image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770874265/4_wfo0qp.webp",
+        }
     ];
 
     return (
