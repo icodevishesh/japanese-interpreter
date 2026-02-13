@@ -43,26 +43,26 @@ export default function StandardRoomPage({
         {
             title: t("experiences.card1.title"),
             desc: t("experiences.card1.desc"),
-            image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/massage.jpg",
+            image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770790566/massage_j9jfj7.jpg",
             link: `/experiences/ayurvedic-message`
         },
         {
             title: t("experiences.card2.title"),
             desc: t("experiences.card2.desc"),
-            image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/veg.png",
+            image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802866/veg_2_11zon_commpn.jpg",
             rank: t("experiences.card2.rank"),
             link: `/experiences/indian-cuisine-experience`,
         },
         {
             title: t("experiences.card3.title"),
             desc: t("experiences.card3.desc"),
-            image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/hennatattoo.png",
+            image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802831/Hennatattoo_6_11zon_vpym5o.jpg",
             link: `/experiences/henna-art-experiences`,
         },
         {
             title: t("experiences.card4.title"),
             desc: t("experiences.card4.desc"),
-            image: "https://www.japanese-interpreter.com/wp-content/uploads/images/experience-card/yoga.jpg",
+            image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770790652/yoga_iorclm.jpg",
             link: `/experiences/yoga-experience`,
         },
         {
