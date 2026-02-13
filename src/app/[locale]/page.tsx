@@ -202,7 +202,7 @@ export default async function Home({
                                 info3: t("stay.deluxeRoomInfo4"),
                                 meal: t("stay.meals"),
                                 alt: "Standard Room",
-                                link: `${locale}/standard-room`
+                                link: `${locale}/homestay/standard-room`
                             },
                             {
                                 image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803023/deeluxrrom1_10_11zon_zwhqdk.jpg",
@@ -214,7 +214,7 @@ export default async function Home({
                                 info3: t("stay.deluxeRoomInfo4"),
                                 meal: t("stay.meals"),
                                 alt: "Deluxe Room",
-                                link: `${locale}/super-deluxe-room`
+                                link: `${locale}/homestay/super-deluxe-room`
                             },
                         ]}
                     />

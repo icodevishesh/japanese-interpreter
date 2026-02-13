@@ -3,7 +3,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import { Inter, Geist, Geist_Mono, Playfair_Display } from "next/font/google";
-import "../../app/globals.css";
+import "../globals.css";
 
 import { Footer } from "../../components/Footer";
 import FloatingSocials from "../../components/FloatingSocials";

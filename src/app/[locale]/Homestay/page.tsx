@@ -23,7 +23,7 @@ export default async function Homestay({
             info2: t("stay.standardRoomInfo3"),
             info3: t("stay.deluxeRoomInfo4"),
             alt: "Standard Room",
-            link: `/standard-room`
+            link: `/homestay/standard-room`
         },
         {
             image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803023/deeluxrrom1_10_11zon_zwhqdk.jpg",
@@ -34,7 +34,7 @@ export default async function Homestay({
             info2: t("stay.deluxeRoomInfo3"),
             info3: t("stay.deluxeRoomInfo4"),
             alt: "Deluxe Room",
-            link: `/super-deluxe-room`
+            link: `/homestay/super-deluxe-room`
         },
     ];
 
