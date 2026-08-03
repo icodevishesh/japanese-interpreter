@@ -144,7 +144,7 @@ export default async function Home({
                         </p>
 
                         <span className="text-sm md:text-md text-black font-extrabold tracking-wide mb-6 flex items-center uppercase">
-                            *{t("selfIntro.experience")}
+                            {t("selfIntro.experience")}
                         </span>
 
                         <ul className="space-y-4 w-full">
